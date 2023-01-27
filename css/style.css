@@ -1,0 +1,256 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+    
+    margin: 0;
+    /* background-image: url(/css/bg.png); */
+}
+
+.bg {
+    /* The image used */
+    background-image: url(/css/bg.png);
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.line-container{
+    
+    position: fixed;
+    top: 255px;
+    left: 500px;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+
+}
+.dot-container{
+    position: fixed;
+    width: 5%;
+    height: 5%;
+    overflow: hidden;
+
+}
+
+#dotOne {
+    top: 47.5%;
+    right: 46.5%;    
+}
+
+#dotTwo {
+    top: 25%;
+    right: 39.7%;    
+}
+
+#dotThree {
+    top: 27%;
+    left: 25%;    
+}
+
+
+.line-svg{
+    display: inline-block;
+    height: 40%;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: -1000;
+    animation-delay: 1s;
+    animation: draw 10s ease infinite;
+    color: green;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 10;
+    }
+    0% {opacity: 1;}
+    30% {opacity: 1;}
+    60% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.straight-svg{
+    display: inline-block;
+    height: 40%;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-delay: 10s;
+    animation: drawstraight 10s ease infinite;
+}
+
+@keyframes drawstraight {
+    to {
+        stroke-dashoffset: 0;
+    }
+    0% {opacity: 1;}
+    30% {opacity: 1;}
+    60% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.dot-container{
+    position: fixed;
+    top: 47.5%;
+    right: 46%;
+    width: 5%;
+    height: 5%;
+    overflow: hidden;
+    
+}
+
+.dot-svg{
+    display: inline-block;
+    height: 60%;
+    stroke-dasharray: 500;
+    stroke-dashoffset: -500;
+    animation-delay: -1s;
+    animation: dotdraw 10s ease infinite;
+    opacity: 0;
+}
+
+@keyframes dotdraw {
+    to {
+        stroke-dashoffset: 0;
+        
+    }
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    60% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#hg2 {animation-delay: 0.5s}
+#hg3 {animation-delay: 1.0s}
+#hg4 {animation-delay: 1.5s}
+#hg5 {animation-delay: 2.0s}
+
+#dotTwo {animation-delay: -1ms;}
+#dotThree {animation-delay: 2s;}
+
+.compass-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 15%;
+    width: 15%;
+}
+.local-time-container {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    height: 80px;
+    width: 218px;
+    background-color: #00000057;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 10px;
+}
+.randomdata-display-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35vh;
+    width: 100%;
+
+}
+
+.data-record {
+    height: 35vh;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+@media screen and (max-width: 576px) {
+    .bg {
+        background-color: black;
+        height: 50%;
+        background-size: contain;
+        background-repeat: space;
+    }
+
+    .local-time-container {
+        left: 35%;
+        width: 120px;
+        height: 50px;
+    }
+}
+
+.content-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.single-shoot{
+    
+    position: fixed;
+    
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    
+}
+.single-shoot-gradient{
+    
+    position: fixed;
+    width: 423;
+    height: 277;
+    overflow: hidden;
+    
+}
+
+#shootOne {
+    rotate: 346deg;
+    top: 95px;
+    left: 400px;
+}
+
+#shootTwo {
+    rotate: 300deg;
+    bottom: 295px;
+    left: 450px;
+}
+#shootThree {
+    position: absolute;
+    rotate: 346deg;
+    bottom: 295px;
+    left: 410px;
+}
+.most-targeted{
+    position: absolute;
+    top:29%;
+    right:0;
+    background-color: rgba(16, 156, 95, 0.164);
+    height: 270px;
+    width: 225px;
+}
+.total-attacks{
+    position: absolute;
+    top:12%;
+    right:0;
+    background-color: rgba(16, 156, 95, 0.164);
+    height: 100px;
+    width: 225px;
+}
+
+.desc {
+    font-size: 0.8rem;
+    color: rgb(221, 204, 172);
+    padding-top: 5px;
+}
+
+

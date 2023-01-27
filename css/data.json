@@ -1,0 +1,131 @@
+[
+    {
+        "id": "1",
+        "Country": "Afghanistan",
+        "Area": "65860",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "2",
+        "Country": "Albania",
+        "Area": "27400",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "3",
+        "Country": "Australia",
+        "Area": "76820",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "4",
+        "Country": "Austria",
+        "Area": "82409",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "5",
+        "Country": "Belgium",
+        "Area": "30280",
+        "img": "/css/nepal-flag.png"
+    },
+    {
+        "id": "6",
+        "Country": "Cambodia",
+        "Area": "38117",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "7",
+        "Country": "Chile",
+        "Area": "74532",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "8",
+        "Country": "Denmark",
+        "Area": "42430",
+        "img": "/css/nepal-flag.png"
+    },
+    {
+        "id": "9",
+        "Country": "Egypt",
+        "Area": "99450",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "10",
+        "Country": "Eritrea",
+        "Area": "42390",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "11",
+        "Country": "Eswatini",
+        "Area": "17200",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "12",
+        "Country": "Afghanistan",
+        "Area": "65860",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "13",
+        "Country": "Albania",
+        "Area": "27400",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "14",
+        "Country": "Australia",
+        "Area": "76370",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "15",
+        "Country": "Austria",
+        "Area": "82409",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "16",
+        "Country": "Belgium",
+        "Area": "3280",
+        "img": "/css/nepal-flag.png"
+    },
+    {
+        "id": "17",
+        "Country": "Cambodia",
+        "Area": "3117",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "18",
+        "Country": "Chile",
+        "Area": "74532",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "19",
+        "Country": "Denmark",
+        "Area": "4430",
+        "img": "/css/afghanistan.png"
+    },
+    {
+        "id": "20",
+        "Country": "Egypt",
+        "Area": "99550",
+        "img": "/css/nepal-flag.png"
+    },
+    {
+        "id": "21",
+        "Country": "Eritrea",
+        "Area": "4390",
+        "img": "/css/afghanistan.png"
+    }
+    
+
+
+]
