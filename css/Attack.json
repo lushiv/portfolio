@@ -1,0 +1,49 @@
+[
+    {
+        "id": "1454",
+        "Port": "22",
+        "AttackType": "ssh"
+    },
+    {
+        "id": "1224",
+        "Port": "5900",
+        "AttackType": "netis-router"
+    },
+    {
+        "id": "1733",
+        "Port": "1433",
+        "AttackType": "ms-sql-s"
+    },
+    {
+        "id": "11154",
+        "Port": "5900",
+        "AttackType": "telnet"
+    },
+    {
+        "id": "17884",
+        "Port": "138",
+        "AttackType": "rfb"
+    },
+    {
+        "id": "18754",
+        "Port": "80",
+        "AttackType": "http"
+    },
+    {
+        "id": "1654",
+        "Port": "64",
+        "AttackType": "netbios-dgm"
+    },
+    {
+        "id": "13254",
+        "Port": "388",
+        "AttackType": "microsoft-ds"
+    },
+    {
+        "id": "17554",
+        "Port": "900",
+        "AttackType": "xsan-filesystem"
+    }
+
+
+]
