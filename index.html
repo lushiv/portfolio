@@ -3,65 +3,1252 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coming Soon</title>
-<meta name="description" content="This site is under construction. Coming soon.">
-<meta name="robots" content="noindex">
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+<title>Janak Singh Raikhola — Backend Architect &amp; AI/IoT Researcher</title>
+<meta name="description" content="Janak Singh Raikhola is a backend architect and AI, IoT and robotics researcher building distributed systems, AI agents and on-chain services. Top Rated Plus on Upwork with 100% Job Success.">
+<meta name="author" content="Janak Singh Raikhola">
+<meta name="theme-color" content="#0d1117">
 
-  html, body { height: 100%; }
+<meta property="og:type" content="website">
+<meta property="og:title" content="Janak Singh Raikhola — Backend Architect &amp; AI/IoT Researcher">
+<meta property="og:description" content="High-scale server architecture, AI agents, IoT hardware and Web3. 6+ years of production engineering. Top Rated Plus on Upwork.">
+<meta property="og:image" content="https://www.jraikhola.com.np/img/hero-core.jpg">
+<meta property="og:url" content="https://www.jraikhola.com.np/">
+<meta name="twitter:card" content="summary_large_image">
 
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    background: #0b0f14;
-    color: #e6edf3;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    text-align: center;
-  }
+<link rel="canonical" href="https://www.jraikhola.com.np/">
+<link rel="icon" type="image/svg+xml" href="/img/capricorn.svg">
 
-  .wrap { max-width: 560px; }
-
-  .spinner {
-    width: 44px;
-    height: 44px;
-    margin: 0 auto 32px;
-    border: 3px solid rgba(230, 237, 243, 0.15);
-    border-top-color: #ffb325;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  h1 {
-    font-size: clamp(2rem, 6vw, 3rem);
-    letter-spacing: -0.02em;
-    margin-bottom: 12px;
-  }
-
-  p {
-    color: #9aa7b2;
-    font-size: 1.05rem;
-    line-height: 1.6;
-  }
-
-  a { color: #ffb325; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  @media (prefers-reduced-motion: reduce) {
-    .spinner { animation-duration: 3s; }
-  }
-</style>
+<link rel="preload" as="image" href="/img/hero-core.jpg">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <main class="wrap">
-    <div class="spinner" role="presentation"></div>
-    <h1>Coming Soon</h1>
-    <p>This site is under construction. Something new is on the way.</p>
-    <p><a href="mailto:hello@jraikhola.com.np">hello@jraikhola.com.np</a></p>
-  </main>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="/img/capricorn.svg" alt="" width="36" height="36" decoding="async">
+      </span>
+      <span class="brand-name">Janak Raikhola</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#voices">Voices</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="https://github.com/lushiv" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" data-label="Home" aria-labelledby="hero-title">
+    <div class="sky" aria-hidden="true">
+      <span class="orbit-path"></span>
+      <div class="orbit">
+        <div class="saturn">
+          <svg viewBox="0 0 220 220" focusable="false">
+            <g transform="rotate(-17 110 110)" fill="none" stroke="#ffffff" stroke-linecap="round">
+              <path d="M22 110A88 24 0 0 1 198 110" stroke-width="3" opacity="0.32"/>
+              <circle cx="110" cy="110" r="44" fill="#0d1117" stroke="#ffffff" stroke-width="2.4" opacity="0.9"/>
+              <ellipse cx="110" cy="110" rx="72" ry="17" stroke-width="1.2" opacity="0.28"/>
+              <path d="M110 66a44 44 0 0 1 0 88" fill="rgba(255,255,255,0.06)" stroke="none"/>
+              <path d="M198 110A88 24 0 0 1 22 110" stroke-width="3.4" opacity="0.75"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <p class="hero-eyebrow">
+          <span class="pulse" aria-hidden="true"></span>
+          Backend Architect &middot; AI, IoT &amp; Robotics Researcher
+        </p>
+
+        <h1 id="hero-title">
+          Architecting Autonomous Systems &amp; Core Backends
+        </h1>
+
+        <p class="hero-lede">
+          Hi, I'm Janak Singh Raikhola. I move from remote mountain infrastructure to global
+          distributed systems, bridging high-scale server architecture, AI agents and IoT hardware.
+        </p>
+
+        <div class="terminal" role="img" aria-label="Terminal: distributed-systems engineer, Go Python Node, ai-agents, iot-robotics, web3">
+          <div class="terminal-bar">
+            <span class="terminal-dot" aria-hidden="true"></span>
+            <span class="terminal-dot" aria-hidden="true"></span>
+            <span class="terminal-dot" aria-hidden="true"></span>
+            <span class="terminal-title">jraikhola.core.sys</span>
+          </div>
+          <pre class="terminal-body"><code><span class="t-prompt">$</span> <span class="t-caret" aria-hidden="true"></span><span class="t-text" data-typed='["whoami","-> Janak Singh Raikhola","stack  -> Go · Python · Node.js","focus  -> ai-agents · iot-robotics","chain  -> ethereum · solana","ship    -> microservices · event-driven","done"]'></span></code></pre>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">Explore research &amp; work</a>
+          <a class="btn btn-ghost" href="https://github.com/lushiv" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div class="stat">
+            <dt>Experience</dt>
+            <dd>6+ years</dd>
+          </div>
+          <div class="stat">
+            <dt>Job success</dt>
+            <dd><a href="https://www.upwork.com/freelancers/~01c88ff1cc7889d204?viewMode=1" target="_blank" rel="noopener noreferrer">100% on Upwork</a></dd>
+          </div>
+          <div class="stat">
+            <dt>Research</dt>
+            <dd>AI &amp; IoT active</dd>
+          </div>
+          <div class="stat">
+            <dt>Based in</dt>
+            <dd>Nepal (UTC +05:45)</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual">
+        <div class="sys-card">
+          <div class="sys-head">
+            <span class="sys-dot" aria-hidden="true"></span>
+            <span class="sys-dot" aria-hidden="true"></span>
+            <span class="sys-dot" aria-hidden="true"></span>
+            <span class="sys-title">jraikhola.core.sys</span>
+          </div>
+          <div class="sys-frame">
+            <img src="/img/hero-core.jpg" width="1408" height="768" alt="Abstract high-tech visualisation of distributed backend infrastructure, neural IoT pipelines and robotics architecture" loading="eager" decoding="async">
+            <span class="sys-scan" aria-hidden="true"></span>
+          </div>
+          <p class="sys-caption">
+            <span class="sys-caption-dot" aria-hidden="true"></span>
+            Neural IoT &amp; Microservices
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="trust" data-label="Track record" aria-label="Upwork track record">
+    <div class="container trust-grid">
+
+      <div class="trust-copy">
+        <p class="trust-mark"><span class="trust-dot" aria-hidden="true"></span>upwork</p>
+
+        <h2 class="trust-title">Top Rated Plus, with a 100% Job Success record</h2>
+
+        <ul class="trust-facts">
+          <li>
+            <strong>100%</strong>
+            <span>Job Success</span>
+          </li>
+          <li>
+            <strong>Top Rated Plus</strong>
+            <span>Talent badge</span>
+          </li>
+          <li>
+            <strong>Backend</strong>
+            <span>Specialist profile</span>
+          </li>
+        </ul>
+
+        <a class="btn btn-primary"
+           href="https://www.upwork.com/freelancers/~01c88ff1cc7889d204?viewMode=1"
+           target="_blank"
+           rel="noopener noreferrer">View Upwork profile</a>
+      </div>
+
+      <a class="spotlight"
+         href="https://www.upwork.com/freelancers/~01c88ff1cc7889d204?viewMode=1"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Open my Upwork profile in a new tab">
+        <span class="spotlight-frame">
+          <span class="spotlight-body">
+            <img src="/img/upwork-profile.png"
+                 width="994"
+                 height="436"
+                 alt="Screenshot of my Upwork profile showing a 100% Job Success record and Top Rated Plus badge"
+                 loading="lazy"
+                 decoding="async">
+            <span class="spotlight-sweep" aria-hidden="true"></span>
+          </span>
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section" id="about" data-label="About" aria-labelledby="about-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">01 — About</p>
+        <h2 id="about-title">Backend first, blockchain by choice</h2>
+      </header>
+
+      <div class="about-grid">
+        <div class="prose">
+          <p>
+            I'm Janak Singh Raikhola — backend engineer, software architect and tech researcher
+            based in Nepal. Most of my work lives behind the API: services, queues, data stores and
+            the plumbing that keeps them healthy.
+          </p>
+          <p>
+            Across six years I've shipped REST and gRPC services, broken monoliths into microservices,
+            built event-driven pipelines on RabbitMQ and Kafka, and wired payment rails for Bitcoin,
+            Ethereum, Solana, Binance, Ripple and Dash. On the Web3 side I work across Web3.js, dApps
+            and ERC-20/ERC-721 contracts.
+          </p>
+          <p>
+            Lately my research has pulled toward AI agents, edge inference and IoT/robotics — the
+            point where a service meets a sensor and has to keep working in the real world. I run
+            the infrastructure too: Docker, Kubernetes, AWS, DigitalOcean, Nginx and Jenkins.
+          </p>
+        </div>
+
+        <aside class="about-facts" aria-label="At a glance">
+          <h3 class="facts-title">At a glance</h3>
+          <ul class="facts-list">
+            <li><span class="facts-key">Role</span><span class="facts-val">Founding Engineer &amp; AI Systems Architect</span></li>
+            <li><span class="facts-key">Languages</span><span class="facts-val">Python, Node.js, Golang</span></li>
+            <li><span class="facts-key">Frameworks</span><span class="facts-val">Django, FastAPI, Flask, Express</span></li>
+            <li><span class="facts-key">Databases</span><span class="facts-val">PostgreSQL, MySQL, MongoDB, Redis</span></li>
+            <li><span class="facts-key">Queues</span><span class="facts-val">RabbitMQ, Kafka, Socket.io</span></li>
+            <li><span class="facts-key">Cloud</span><span class="facts-val">AWS, DigitalOcean, GCP</span></li>
+            <li><span class="facts-key">Sign</span><span class="facts-val">Capricorn &#2651; &middot; ruled by Saturn &#9804;</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="experience" data-label="Experience" aria-labelledby="experience-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">02 — Experience</p>
+        <h2 id="experience-title">Where I've built things</h2>
+        <p class="section-desc">
+          Product engineering, platform architecture and research across startups, enterprises
+          and freelance engagements.
+        </p>
+      </header>
+
+      <ol class="timeline">
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Founding Engineer &amp; AI Systems Architect</h3>
+                <p class="tl-org">FutureStoreAI <span class="tl-tag">FSAI</span></p>
+              </div>
+              <p class="tl-date">May 2026 — Present <span class="tl-type">Part-time</span></p>
+            </div>
+            <p class="tl-place">Remote</p>
+            <p class="tl-desc">
+              Shaped the technical foundation of a SaaS product from the start: scalable
+              architecture for the offering, plus integration of advanced AI systems that lifted
+              real functionality and user engagement. Worked across disciplines to make sure the
+              solution matched what the market actually needed.
+            </p>
+            <ul class="work-meta">
+              <li>Artificial Intelligence</li>
+              <li>Back-End Development</li>
+              <li>System Architecture</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Senior Software Engineer</h3>
+                <p class="tl-org">FastUsers</p>
+              </div>
+              <p class="tl-date">May 2026 — Present <span class="tl-type">Part-time</span></p>
+            </div>
+            <p class="tl-place">Bangkok City, Thailand &middot; Remote</p>
+            <p class="tl-desc">
+              Senior engineering on a live product, with responsibility for quality across the
+              service boundary. Earlier in the same engagement I owned the backend directly on
+              Node.js and Python from December 2022 to May 2026.
+            </p>
+            <ul class="work-meta">
+              <li>Software Testing</li>
+              <li>iTest</li>
+              <li>Node.js</li>
+              <li>Python</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Senior Software Developer</h3>
+                <p class="tl-org">MSQUARE GLOBAL</p>
+              </div>
+              <p class="tl-date">Apr 2024 — May 2026 <span class="tl-type">Full-time</span></p>
+            </div>
+            <p class="tl-place">Seoul, South Korea &middot; Remote</p>
+            <p class="tl-desc">
+              Led backend development for enterprise clients, then carried the same team through
+              its Web3 practice — smart contracts and Web3.js delivery on parallel remote
+              engagements from 2023, and a backend engineering track before that.
+            </p>
+            <ul class="work-meta">
+              <li>Web3</li>
+              <li>Smart Contracts</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Software Engineer</h3>
+                <p class="tl-org">MUST Company</p>
+              </div>
+              <p class="tl-date">Apr 2023 — May 2026 <span class="tl-type">Full-time</span></p>
+            </div>
+            <p class="tl-place">Blockchain &middot; FinTech</p>
+            <p class="tl-desc">
+              Built and maintained production services in blockchain and fintech, where
+              correctness is not negotiable and every release carries real money behind it.
+            </p>
+            <ul class="work-meta">
+              <li>Blockchain</li>
+              <li>FinTech</li>
+              <li>Backend Engineering</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Backend Developer <span class="tl-badge">Top Rated Plus</span></h3>
+                <p class="tl-org"><a href="https://www.upwork.com/freelancers/~01c88ff1cc7889d204?viewMode=1" target="_blank" rel="noopener noreferrer">Upwork</a></p>
+              </div>
+              <p class="tl-date">Oct 2022 — Feb 2023 <span class="tl-type">Freelance</span></p>
+            </div>
+            <p class="tl-place">Kathmandu, Bāgmatī, Nepal &middot; Remote</p>
+            <p class="tl-desc">
+              Freelance backend engagements with a 100% Job Success record, covering API
+              documentation and cloud services work.
+            </p>
+            <ul class="work-meta">
+              <li>API Documentation</li>
+              <li>Cloud Services</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Back End Developer</h3>
+                <p class="tl-org">bitsbeat</p>
+              </div>
+              <p class="tl-date">Feb 2020 — Sep 2022 <span class="tl-type">Full-time</span></p>
+            </div>
+            <p class="tl-place">Nepal</p>
+            <p class="tl-desc">
+              Two and a half years of backend delivery, API documentation and cloud services —
+              where I built the foundations I still build on.
+            </p>
+            <ul class="work-meta">
+              <li>API Documentation</li>
+              <li>Cloud Services</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Internet Research Analyst</h3>
+                <p class="tl-org">iBriz.ai</p>
+              </div>
+              <p class="tl-date">Jul 2018 — Feb 2020 <span class="tl-type">On-site</span></p>
+            </div>
+            <p class="tl-place">Blockchain &middot; Artificial Intelligence</p>
+            <p class="tl-desc">
+              Internet and market research across blockchain and AI, learning to read a
+              technical landscape quickly and report on it precisely.
+            </p>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker tl-marker-muted" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Internet Researcher</h3>
+                <p class="tl-org">TechFlow Space</p>
+              </div>
+              <p class="tl-date">Jan 2019 — Jan 2020 <span class="tl-type">Full-time</span></p>
+            </div>
+            <p class="tl-desc">
+              Internet research spanning blockchain and artificial intelligence.
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="stack" data-label="Stack" aria-labelledby="stack-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">03 — Stack</p>
+        <h2 id="stack-title">What I build with</h2>
+      </header>
+
+      <div class="stack-grid">
+        <article class="card">
+          <h3>Languages</h3>
+          <ul class="stack-chips">
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/python.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Python</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/nodejs.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Node.js</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/javascript.svg" alt="" width="18" height="18" loading="lazy" decoding="async">JavaScript</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/go.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Go</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Databases</h3>
+          <ul class="stack-chips">
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/mysql.svg" alt="" width="18" height="18" loading="lazy" decoding="async">MySQL</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/postgresql.svg" alt="" width="18" height="18" loading="lazy" decoding="async">PostgreSQL</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/mongodb.svg" alt="" width="18" height="18" loading="lazy" decoding="async">MongoDB</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/redis.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Redis</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Messaging</h3>
+          <ul class="stack-chips">
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/rabbitmq.svg" alt="" width="18" height="18" loading="lazy" decoding="async">RabbitMQ</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Web3</h3>
+          <ul class="stack-chips">
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/ethereum.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Ethereum</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/solana.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Solana</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/bitcoin.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Bitcoin</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/tether.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Tether</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/binance.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Binance</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Cloud & Ops</h3>
+          <ul class="stack-chips">
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/aws.svg" alt="" width="18" height="18" loading="lazy" decoding="async">AWS</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/docker.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Docker</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/kubernetes.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Kubernetes</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/nginx.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Nginx</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/linux.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Linux</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Tooling</h3>
+          <ul class="stack-chips">
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/git.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Git</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/github.svg" alt="" width="18" height="18" loading="lazy" decoding="async">GitHub</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/gitlab.svg" alt="" width="18" height="18" loading="lazy" decoding="async">GitLab</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/visualstudio.svg" alt="" width="18" height="18" loading="lazy" decoding="async">VS Code</li>
+            <li class="stack-chip"><img class="stack-logo" src="/img/stack/markdown.svg" alt="" width="18" height="18" loading="lazy" decoding="async">Markdown</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="research" data-label="Research" aria-labelledby="research-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">04 — Robotics &amp; IoT Research</p>
+        <h2 id="research-title">Notes from the bench</h2>
+        <p class="section-desc">
+          Hardware captures from robotics and IoT experiments — sensor rigs, edge inference
+          runs and bench tests of things that have to survive contact with the real world.
+        </p>
+      </header>
+
+      <div class="lab-grid">
+        <button class="lab-item lab-wide" type="button" data-lab data-src="/img/iot-robotics/IMG_1876.jpg" style="--media: url('/img/iot-robotics/IMG_1876-sm.jpg')" aria-label="Open image 1 full size">
+          <img src="/img/iot-robotics/IMG_1876-sm.jpg" srcset="/img/iot-robotics/IMG_1876-sm.jpg 900w, /img/iot-robotics/IMG_1876.jpg 1400w" sizes="(max-width: 720px) 92vw, (max-width: 980px) 45vw, 26vw" alt="Research capture from the field lab" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item" type="button" data-lab data-src="/img/iot-robotics/IMG_1878.jpg" style="--media: url('/img/iot-robotics/IMG_1878-sm.jpg')" aria-label="Open image 2 full size">
+          <img src="/img/iot-robotics/IMG_1878-sm.jpg" srcset="/img/iot-robotics/IMG_1878-sm.jpg 900w, /img/iot-robotics/IMG_1878.jpg 1400w" sizes="(max-width: 720px) 92vw, (max-width: 980px) 45vw, 26vw" alt="Research capture from the field lab" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item" type="button" data-lab data-src="/img/iot-robotics/IMG_1879.mp4" style="--media: url('/img/iot-robotics/IMG_1879-poster.jpg')" data-type="video" data-poster="/img/iot-robotics/IMG_1879-poster.jpg" aria-label="Play video 3">
+          <span class="lab-play" aria-hidden="true"></span>
+          <img src="/img/iot-robotics/IMG_1879-poster.jpg" alt="" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item" type="button" data-lab data-src="/img/iot-robotics/IMG_1969.jpg" style="--media: url('/img/iot-robotics/IMG_1969-sm.jpg')" aria-label="Open image 4 full size">
+          <img src="/img/iot-robotics/IMG_1969-sm.jpg" srcset="/img/iot-robotics/IMG_1969-sm.jpg 900w, /img/iot-robotics/IMG_1969.jpg 1400w" sizes="(max-width: 720px) 92vw, (max-width: 980px) 45vw, 26vw" alt="Research capture from the field lab" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item lab-wide" type="button" data-lab data-src="/img/iot-robotics/IMG_1972-2.jpg" style="--media: url('/img/iot-robotics/IMG_1972-2-sm.jpg')" aria-label="Open image 5 full size">
+          <img src="/img/iot-robotics/IMG_1972-2-sm.jpg" srcset="/img/iot-robotics/IMG_1972-2-sm.jpg 900w, /img/iot-robotics/IMG_1972-2.jpg 1400w" sizes="(max-width: 720px) 92vw, (max-width: 980px) 45vw, 26vw" alt="Research capture from the field lab" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item" type="button" data-lab data-src="/img/iot-robotics/IMG_1974-2.jpg" style="--media: url('/img/iot-robotics/IMG_1974-2-sm.jpg')" aria-label="Open image 6 full size">
+          <img src="/img/iot-robotics/IMG_1974-2-sm.jpg" srcset="/img/iot-robotics/IMG_1974-2-sm.jpg 900w, /img/iot-robotics/IMG_1974-2.jpg 1400w" sizes="(max-width: 720px) 92vw, (max-width: 980px) 45vw, 26vw" alt="Research capture from the field lab" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item" type="button" data-lab data-src="/img/iot-robotics/IMG_1981.mp4" style="--media: url('/img/iot-robotics/IMG_1981-poster.jpg')" data-type="video" data-poster="/img/iot-robotics/IMG_1981-poster.jpg" aria-label="Play video 7">
+          <span class="lab-play" aria-hidden="true"></span>
+          <img src="/img/iot-robotics/IMG_1981-poster.jpg" alt="" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item lab-wide" type="button" data-lab data-src="/img/iot-robotics/IMG_1986.jpg" style="--media: url('/img/iot-robotics/IMG_1986-sm.jpg')" aria-label="Open image 8 full size">
+          <img src="/img/iot-robotics/IMG_1986-sm.jpg" srcset="/img/iot-robotics/IMG_1986-sm.jpg 900w, /img/iot-robotics/IMG_1986.jpg 1400w" sizes="(max-width: 720px) 92vw, (max-width: 980px) 45vw, 26vw" alt="Research capture from the field lab" loading="lazy" decoding="async">
+        </button>
+
+        <button class="lab-item lab-wide" type="button" data-lab data-src="/img/iot-robotics/IMG_1993.jpg" style="--media: url('/img/iot-robotics/IMG_1993-sm.jpg')" aria-label="Open image 9 full size">
+          <img src="/img/iot-robotics/IMG_1993-sm.jpg" srcset="/img/iot-robotics/IMG_1993-sm.jpg 900w, /img/iot-robotics/IMG_1993.jpg 1400w" sizes="(max-width: 720px) 92vw, (max-width: 980px) 45vw, 26vw" alt="Research capture from the field lab" loading="lazy" decoding="async">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="code" data-label="Code" aria-labelledby="code-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">05 — Code &amp; Systems</p>
+        <h2 id="code-title">Inside the codebase</h2>
+        <p class="section-desc">
+          Captures from programming experiments — service architecture, traces, profiling
+          runs and debugger sessions where the fix was found.
+        </p>
+      </header>
+
+      <div class="lab-grid" data-code-grid></div>
+
+      <p class="lab-empty" data-code-empty>
+        Coding captures are being curated. Drop the originals into
+        <code>real_code/</code> and they will appear here.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="work" data-label="Work" aria-labelledby="work-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">06 — Work</p>
+        <h2 id="work-title">Selected projects</h2>
+        <p class="section-desc">
+          A few things I've built and open-sourced. More lives in
+          <a href="https://github.com/lushiv" target="_blank" rel="noopener noreferrer">the repository list</a>.
+        </p>
+      </header>
+
+      <article class="spotlight-card" aria-labelledby="mariagin-title">
+        <div class="spotlight-copy">
+          <p class="spotlight-eyebrow"><span class="spotlight-tag" aria-hidden="true"></span>Featured build</p>
+
+          <h3 class="spotlight-name" id="mariagin-title">
+            <img class="spotlight-logo"
+                 src="/img/mariagin-logo.png"
+                 width="700"
+                 height="226"
+                 alt="MariaGin"
+                 loading="lazy"
+                 decoding="async">
+          </h3>
+          <p class="spotlight-tagline">Swaggerize Go Gin Backend With MariaDB</p>
+
+          <p class="spotlight-body">
+            A comprehensive starting point for robust, feature-rich Go backends. Gin handles
+            routing, MariaDB handles storage with Liquibase-managed migrations, and Swagger
+            documentation is served out of the box &mdash; so a new service is one clone away from
+            a self-describing API on <code>:3000</code>.
+          </p>
+
+          <ul class="spotlight-stack" aria-label="Stack and integrations">
+            <li>Go</li>
+            <li>Gin</li>
+            <li>MariaDB</li>
+            <li>Swagger</li>
+            <li>JWT</li>
+            <li>Redis</li>
+            <li>Liquibase</li>
+            <li>RabbitMQ</li>
+            <li>SendGrid</li>
+            <li>Firebase</li>
+            <li>AWS S3</li>
+            <li>Docker</li>
+            <li>Bash</li>
+          </ul>
+
+          <div class="spotlight-facts">
+            <span><strong>65</strong> commits</span>
+            <span><strong>MIT</strong> licensed</span>
+            <span><strong>Go 1.x</strong> &middot; Gin</span>
+            <span>Active since <strong>2023</strong></span>
+          </div>
+
+          <div class="spotlight-actions">
+            <a class="btn btn-primary" href="https://github.com/lushiv/MariaGin" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/lushiv/MariaGin#readme" target="_blank" rel="noopener noreferrer">
+              Setup guide
+            </a>
+          </div>
+        </div>
+
+        <div class="spotlight-visual">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="terminal-dot" aria-hidden="true"></span>
+              <span class="terminal-dot" aria-hidden="true"></span>
+              <span class="terminal-dot" aria-hidden="true"></span>
+              <span class="terminal-title">mariagin — bash</span>
+            </div>
+            <pre class="terminal-body"><code><span class="t-prompt">$</span> <span class="t-caret" aria-hidden="true"></span><span class="t-text" data-typed='["$ git clone https://github.com/lushiv/MariaGin","$ cd MariaGin && go get ./...","$ chmod +x start_server.sh","$ cp .env.sample .env","$ ./db_migration.sh      # liquibase changelog","$ ./start_server.sh","","Gin serving on  :3000","docs → http://localhost:3000/docs/index.html","done"]'></span></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <h3 class="work-title">Krypt</h3>
+          <p class="work-desc">
+            A Flask application that encrypts and decrypts video files and whole directory trees
+            using AES, with key handling kept out of the upload path.
+          </p>
+          <ul class="work-meta">
+            <li>Python</li><li>Flask</li><li>AES</li>
+          </ul>
+          <a class="work-link" href="https://github.com/lushiv/krypt-webapp" target="_blank" rel="noopener noreferrer">
+            View source <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="work-card">
+          <h3 class="work-title">LUT — Lushiv Token</h3>
+          <p class="work-desc">
+            An ERC-20 token deployed on testnet with a companion dApp for transfers, balances and
+            allowance flows.
+          </p>
+          <ul class="work-meta">
+            <li>Solidity</li><li>Web3.js</li><li>ERC-20</li>
+          </ul>
+          <a class="work-link" href="https://github.com/lushiv/lushiv-token" target="_blank" rel="noopener noreferrer">
+            View source <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="work-card">
+          <h3 class="work-title">Ethereum Live Transactions</h3>
+          <p class="work-desc">
+            A Web3.js client that streams address activity, decodes transaction input and renders
+            incoming and outgoing transfers as they land.
+          </p>
+          <ul class="work-meta">
+            <li>JavaScript</li><li>Web3.js</li><li>Ethereum</li>
+          </ul>
+          <a class="work-link" href="https://github.com/lushiv/ethereum-live-transactions" target="_blank" rel="noopener noreferrer">
+            View source <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="work-card">
+          <h3 class="work-title">Solana Transfers</h3>
+          <p class="work-desc">
+            Practical Solana work in JavaScript: building transactions, signing and sending SOL
+            across the network.
+          </p>
+          <ul class="work-meta">
+            <li>JavaScript</li><li>Solana</li>
+          </ul>
+          <a class="work-link" href="https://github.com/lushiv/practice-solana-blockchain" target="_blank" rel="noopener noreferrer">
+            View source <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="work-card">
+          <h3 class="work-title">First Smart Contracts</h3>
+          <p class="work-desc">
+            A clean Truffle project — compile, migrate and test with Ganache, then deploy to an
+            Infura-hosted Ropsten network.
+          </p>
+          <ul class="work-meta">
+            <li>Solidity</li><li>Truffle</li><li>Ganache</li>
+          </ul>
+          <a class="work-link" href="https://github.com/lushiv/first-smart-contracts" target="_blank" rel="noopener noreferrer">
+            View source <span aria-hidden="true">→</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="recognition" data-label="Recognition" aria-labelledby="recognition-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">07 — Recognition</p>
+        <h2 id="recognition-title">Acknowledged on the timeline</h2>
+        <p class="section-desc">
+          Posts and announcements from teams I worked with. Originals live on the platforms.
+        </p>
+      </header>
+
+      <div class="social-grid">
+
+        <article class="social-card social-linkedin">
+          <button class="social-media" type="button" data-lab data-src="/img/social/linkedin-must.jpg" style="--media: url('/img/social/linkedin-must-sm.jpg')" aria-label="Open LinkedIn post image full size">
+            <img src="/img/social/linkedin-must-sm.jpg"
+                 srcset="/img/social/linkedin-must-sm.jpg 800w, /img/social/linkedin-must.jpg 1400w"
+                 sizes="(max-width: 720px) 90vw, 30vw"
+                 alt="LinkedIn post thanking the MUST Company team for the opportunity"
+                 loading="lazy" decoding="async">
+            <span class="social-shine" aria-hidden="true"></span>
+          </button>
+
+          <div class="social-body">
+            <p class="social-platform">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+              LinkedIn
+              <span class="social-date">Jan 2025</span>
+            </p>
+            <h3 class="social-title">MUST Company — opportunity &amp; thanks</h3>
+            <p class="social-caption">
+              &ldquo;Thank you, MUST Company team, for giving the opportunity!!&rdquo;
+            </p>
+            <a class="social-link"
+               href="https://www.linkedin.com/posts/janakprofile_thank-youmust-company-teamfor-govint-the-activity-7289663240228278272-N2mJ"
+               target="_blank" rel="noopener noreferrer">View post <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="social-card social-facebook">
+          <button class="social-media" type="button" data-lab data-src="/img/social/facebook-bitsbeat.jpg" style="--media: url('/img/social/facebook-bitsbeat-sm.jpg')" aria-label="Open Bitsbeat Facebook post image full size">
+            <img src="/img/social/facebook-bitsbeat-sm.jpg"
+                 srcset="/img/social/facebook-bitsbeat-sm.jpg 800w, /img/social/facebook-bitsbeat.jpg 1400w"
+                 sizes="(max-width: 720px) 90vw, 30vw"
+                 alt="Bitsbeat Facebook post naming Janak Singh Raikhola Star of the Month for Ashad"
+                 loading="lazy" decoding="async">
+            <span class="social-shine" aria-hidden="true"></span>
+          </button>
+
+          <div class="social-body">
+            <p class="social-platform">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+              Facebook
+              <span class="social-date">bitsbeat</span>
+            </p>
+            <h3 class="social-title">Bitsbeat — Star of the Month</h3>
+            <p class="social-caption">
+              &ldquo;Congratulations to Janak Singh Raikhola for your remarkable
+              contributions&rdquo; — Bitsbeat-Star of the Month, Ashad.
+            </p>
+            <a class="social-link"
+               href="https://www.facebook.com/bitsbeat/photos/we-are-pleased-to-announce-our-bitsbeat-star-of-the-month-for-the-month-of-ashad/2219514698179738/"
+               target="_blank" rel="noopener noreferrer">View post <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="social-card social-instagram">
+          <button class="social-media" type="button" data-lab data-src="/img/social/instagram-post.jpg" style="--media: url('/img/social/instagram-post-sm.jpg')" aria-label="Open Instagram post image full size">
+            <img src="/img/social/instagram-post-sm.jpg"
+                 srcset="/img/social/instagram-post-sm.jpg 800w, /img/social/instagram-post.jpg 1400w"
+                 sizes="(max-width: 720px) 90vw, 30vw"
+                 alt="Instagram post from the janakprofile account"
+                 loading="lazy" decoding="async">
+            <span class="social-shine" aria-hidden="true"></span>
+          </button>
+
+          <div class="social-body">
+            <p class="social-platform">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.4A6.4 6.4 0 1 0 18.4 12 6.4 6.4 0 0 0 12 5.6zm0 10.6A4.2 4.2 0 1 1 16.2 12 4.2 4.2 0 0 1 12 16.2zm6.6-10.8a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5z"/></svg>
+              Instagram
+              <span class="social-date">@janakprofile</span>
+            </p>
+            <h3 class="social-title">Instagram — @janakprofile</h3>
+            <p class="social-caption">
+              A post from the account, linked to the original on Instagram.
+            </p>
+            <a class="social-link"
+               href="https://www.instagram.com/p/DTXqp5nAMwQ/"
+               target="_blank" rel="noopener noreferrer">View post <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="education" data-label="Education" aria-labelledby="education-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">08 — Learning</p>
+        <h2 id="education-title">Education &amp; credentials</h2>
+      </header>
+
+      <div class="edu-grid">
+        <div class="edu-col">
+          <h3 class="col-title">Education</h3>
+          <ul class="edu-list">
+            <li class="edu-item">
+              <h4>Diploma in Entrepreneurship</h4>
+              <p class="edu-org">Alison</p>
+              <p class="edu-meta">Jan 2024 — Jun 2026 &middot; Grade 80%</p>
+            </li>
+            <li class="edu-item">
+              <h4>Bachelor of Computer Applications</h4>
+              <p class="edu-org">Indira Gandhi National Open University</p>
+              <p class="edu-meta">Computer Engineering</p>
+            </li>
+            <li class="edu-item">
+              <h4>Diploma in Engineering</h4>
+              <p class="edu-org">Kathmandu Institute of Technology</p>
+              <p class="edu-meta">Electrical &amp; Electronics &middot; Feb 2014 — Jan 2017 &middot; 65%</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="edu-col">
+          <h3 class="col-title">Certifications</h3>
+          <ul class="edu-list">
+            <li class="edu-item">
+              <h4>EF SET English Certificate</h4>
+              <p class="edu-org">B2 Upper Intermediate &middot; 52/100</p>
+              <p class="edu-meta">Issued May 2026</p>
+            </li>
+            <li class="edu-item">
+              <h4>Algorithmic Toolbox</h4>
+              <p class="edu-org">UC San Diego — Rady School of Management</p>
+              <p class="edu-meta">Issued Jul 2025 &middot; ID MHGWFBRWUJTY</p>
+            </li>
+            <li class="edu-item">
+              <h4>Ask Questions to Make Data-Driven Decisions</h4>
+              <p class="edu-org">Google</p>
+              <p class="edu-meta">Issued Jun 2021 &middot; ID DQKLDWBVUVQU</p>
+            </li>
+            <li class="edu-item">
+              <h4>Foundations: Data, Data, Everywhere</h4>
+              <p class="edu-org">Google</p>
+              <p class="edu-meta">Issued Jun 2021 &middot; ID E48DCREULJSA</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="voices" data-label="Voices" aria-labelledby="voices-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">09 — Voices</p>
+        <h2 id="voices-title">What colleagues say</h2>
+        <p class="section-desc">
+          Eight recommendations from people I have worked with directly &mdash; backend leads,
+          architects, QA and design, across South Korea, Nepal, Sri Lanka, Bangladesh and beyond.
+        </p>
+      </header>
+
+      <div class="voice-columns">
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #ffffff; --b: #ff7a45;" aria-hidden="true">KM</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">K M Mahmudul Hasan</figcaption>
+              <p class="voice-role">Backend Lead, SUPER TRUST</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/mahmudul-online" target="_blank" rel="noopener noreferrer" aria-label="K M Mahmudul Hasan on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              I had the pleasure of working with Janak, and I highly recommend him as a backend
+              engineer. He is technically strong, dependable, and consistently delivers
+              high-quality, scalable solutions. His problem-solving skills, ownership, and
+              collaborative attitude make him a valuable teammate. Janak is always eager to learn
+              and continuously improves his craft. I&rsquo;m confident he will be a great asset to
+              any engineering team. Wishing him continued success!
+            </p>
+          </blockquote>
+          <p class="voice-date">July 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #45d4ff; --b: #4f8bff;" aria-hidden="true">TP</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">Th&agrave;nh Ph&#7841;m</figcaption>
+              <p class="voice-role">Senior Flutter Developer</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/th%C3%A0nh-ph%E1%BA%A1m-56b20314b" target="_blank" rel="noopener noreferrer" aria-label="Thành Phạm on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              I have worked with Janak on multiple tasks and have always been impressed by his
+              proactive approach to problem-solving. He is a skilled backend developer who
+              communicates clearly and works great within a team. His friendly attitude and strong
+              work ethic make him a fantastic colleague, and I would gladly recommend him for any
+              technical position.
+            </p>
+          </blockquote>
+          <p class="voice-date">July 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #b6f24a; --b: #2fd67b;" aria-hidden="true">GL</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">Godfrey Lebo</figcaption>
+              <p class="voice-role">Technical Product Owner, GlobalMPC</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/godfreylebo" target="_blank" rel="noopener noreferrer" aria-label="Godfrey Lebo on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              I have worked with Janak for almost 3 years; his backend and blockchain skills are
+              amazing. One thing I remember him for the most is how well he uses the debugger to
+              visualize code-flow and fix almost any type of bug. I won&rsquo;t recommend Janak to
+              any simple and easy project, he will easily get bored there. But if you&rsquo;ve
+              got a highly complicated and mind-bending project, then I recommend Janak for you,
+              and you will thank me later.
+            </p>
+          </blockquote>
+          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #7bd3ff; --b: #3d7bff;" aria-hidden="true">MU</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">Manzeel Uprety</figcaption>
+              <p class="voice-role">Lead QA, Product Engineering</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/mnzel" target="_blank" rel="noopener noreferrer" aria-label="Manzeel Uprety on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              I had the pleasure of working alongside Janak at Bitsbeat. Even without a direct
+              working relationship, it was hard not to notice how he carried himself as an
+              engineer. What stood out most was his genuine curiosity &mdash; always digging into
+              something new, asking the right questions and pushing himself to understand things
+              at a deeper level. That kind of learning attitude is rare, and it made him someone
+              you could count on to grow with the challenges thrown at him. He was focused,
+              consistent, and never the kind of person who cut corners when things got hard. Janak
+              is now building his own startup, and honestly, I can&rsquo;t think of a better fit.
+            </p>
+          </blockquote>
+          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #e1306c; --b: #ff8a5b;" aria-hidden="true">&Icirc;K</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">&Icirc;smail G&ouml;rkem Kara</figcaption>
+              <p class="voice-role">Product &amp; Engineering Lead</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/ismailgorkemkara" target="_blank" rel="noopener noreferrer" aria-label="İsmail Görkem Kara on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              I had the opportunity to work with Janak for a long time. He has always amazed me
+              with his drive to improve himself and go the extra mile. He has complemented his
+              skills and knowledge in backend development with expertise in Web3 and blockchain.
+              He knows exactly how to overcome challenges with his production experience. He is a
+              true team player, and I would love to work with him again on a project in the
+              future.
+            </p>
+          </blockquote>
+          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #ffffff; --b: #b6f24a;" aria-hidden="true">SS</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">Saagar Shrestha</figcaption>
+              <p class="voice-role">AI Powered Designer</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/saagarshrest" target="_blank" rel="noopener noreferrer" aria-label="Saagar Shrestha on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              Janak is a highly skilled software developer who consistently delivers quality work
+              and demonstrates excellent problem-solving abilities. He is intelligent, dependable,
+              and quick to adapt to new technologies. What sets him apart is his friendly nature
+              and ability to work effectively with everyone around him. I thoroughly enjoyed
+              working with Janak and would highly recommend him to any team looking for a talented
+              developer and a great colleague.
+            </p>
+          </blockquote>
+          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #45d4ff; --b: #b6f24a;" aria-hidden="true">LC</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">Logan Darrow Clements</figcaption>
+              <p class="voice-role">Software Team Lead</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/logan-darrow-clements-8860b21" target="_blank" rel="noopener noreferrer" aria-label="Logan Darrow Clements on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              Janak did an excellent job handling the core tech functions of our software network.
+              He interacted well with all the team members located in different nations. He&rsquo;s a
+              top quality backend core tech engineer.
+            </p>
+          </blockquote>
+          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" style="--a: #8f7bff; --b: #45d4ff;" aria-hidden="true">SP</span>
+            <div class="voice-id">
+              <figcaption class="voice-name">Shanaka Perera</figcaption>
+              <p class="voice-role">Solution Architect</p>
+            </div>
+            <a class="voice-link" href="https://www.linkedin.com/in/shanaka-perera-34a93687" target="_blank" rel="noopener noreferrer" aria-label="Shanaka Perera on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            </a>
+          </div>
+          <blockquote>
+            <p>
+              Working with Janak has been an absolute privilege. He&rsquo;s not only a talented
+              backend engineer but also someone who brings positive energy and collaboration into
+              every discussion. Whether it&rsquo;s optimizing APIs, improving system performance,
+              or helping teammates debug tricky issues, he always steps up. He&rsquo;s dependable,
+              thoughtful, and truly committed to building great software.
+            </p>
+          </blockquote>
+          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="devotion" data-label="Devotion" aria-labelledby="devotion-title">
+    <div class="container devotion-inner">
+      <div class="devotion-art" data-third-eye>
+        <svg viewBox="0 0 320 320" role="img" aria-label="Meditating silhouette beneath a glowing third eye and rotating mandala rings">
+          <defs>
+            <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f2f2f5" stop-opacity="0.95"/>
+              <stop offset="45%" stop-color="#ffffff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#c9d1d9" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="bodyFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#c9d1d9" stop-opacity="0.35"/>
+            </linearGradient>
+          </defs>
+
+          <g class="mandala" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5">
+            <circle cx="160" cy="160" r="152" stroke-dasharray="2 10" opacity="0.55"/>
+            <circle cx="160" cy="160" r="126" stroke-dasharray="26 14" opacity="0.4"/>
+            <circle cx="160" cy="160" r="104" stroke-dasharray="1 8" opacity="0.35"/>
+          </g>
+
+          <g class="trishul" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.65">
+            <path d="M160 44 L160 96"/>
+            <path d="M160 44 C150 56 144 68 144 82"/>
+            <path d="M160 44 C170 56 176 68 176 82"/>
+          </g>
+
+          <circle class="eye-halo" cx="160" cy="120" r="46" fill="url(#eyeGlow)"/>
+          <ellipse class="eye" cx="160" cy="120" rx="17" ry="9" fill="none" stroke="#ffffff" stroke-width="2.4"/>
+          <circle class="eye-pupil" cx="160" cy="120" r="3.4" fill="#f2f2f5"/>
+
+          <g class="figure" fill="url(#bodyFill)">
+            <circle cx="160" cy="140" r="17"/>
+            <path d="M160 158c-19 0-33 12-37 30-2 9-9 16-20 22h114c-11-6-18-13-20-22-4-18-18-30-37-30z"/>
+            <path d="M86 226c10 12 36 18 74 18s64-6 74-18c4 14-28 26-74 26s-78-12-74-26z"/>
+          </g>
+
+          <path class="ground" d="M64 268h192" stroke="#ffffff" stroke-width="1.4" opacity="0.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="devotion-copy">
+        <p class="section-label">10 — Stillness</p>
+        <h2 id="devotion-title">Calm before the build</h2>
+        <p>
+          Before any system goes live there is a quiet moment where the shape of the problem
+          settles. Meditation is part of my process, not decoration &mdash; the same discipline
+          that keeps a distributed system honest under load keeps the mind clear when the
+          requirements are still moving.
+        </p>
+        <blockquote class="devotion-quote">
+          <p class="devotion-mantra" lang="sa" aria-hidden="true">&#2384;&#2381;&#2352;</p>
+          <p>
+            Tat tvam asi &mdash; you are that. The engineer and the system are never separate:
+            what you bring into the work is what the work becomes.
+          </p>
+        </blockquote>
+        <p class="devotion-note">
+          <span class="devotion-dot" aria-hidden="true"></span>
+          Trishul, third eye, mandala &mdash; drawn in SVG, no image assets.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" data-label="Direction" aria-labelledby="statement-title">
+    <div class="statement-media" aria-hidden="true">
+      <img src="/img/vision-900.jpg"
+           srcset="/img/vision-900.jpg 900w, /img/vision-1600.jpg 1600w"
+           sizes="100vw"
+           alt=""
+           loading="lazy"
+           decoding="async">
+      <span class="statement-veil"></span>
+      <span class="statement-beam"></span>
+    </div>
+
+    <div class="container statement-inner">
+      <p class="section-label">11 — Direction</p>
+      <h2 id="statement-title">From a mountain village to global infrastructure</h2>
+      <p class="statement-body">
+        The research and the services keep feeding each other: sensors push real constraints
+        into the backend, and what the backend learns goes back out to the edge. That loop is
+        the work.
+      </p>
+      <ul class="statement-chips">
+        <li>AI agents</li>
+        <li>Edge inference</li>
+        <li>Distributed systems</li>
+        <li>IoT &amp; robotics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact" data-label="Contact" aria-labelledby="contact-title">
+    <div class="container contact-inner">
+      <header class="section-head">
+        <p class="section-label">12 — Contact</p>
+        <h2 id="contact-title">Let's build something</h2>
+        <p class="section-desc">
+          Got a backend problem, a Web3 integration, or an architecture worth arguing about?
+          My inbox is open.
+        </p>
+      </header>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-key">Upwork</span>
+          <a class="contact-val" href="https://www.upwork.com/freelancers/~01c88ff1cc7889d204?viewMode=1" target="_blank" rel="noopener noreferrer">Top Rated Plus &middot; 100% Job Success</a>
+        </li>
+        <li>
+          <span class="contact-key">Email</span>
+          <a class="contact-val" href="mailto:hello@jraikhola.com.np">hello@jraikhola.com.np</a>
+        </li>
+        <li>
+          <span class="contact-key">GitHub</span>
+          <a class="contact-val" href="https://github.com/lushiv" target="_blank" rel="noopener noreferrer">github.com/lushiv</a>
+        </li>
+        <li>
+          <span class="contact-key">LinkedIn</span>
+          <a class="contact-val" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">in/janakprofile</a>
+        </li>
+        <li>
+          <span class="contact-key">Website</span>
+          <span class="contact-val">www.jraikhola.com.np</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+  <button class="lightbox-close" type="button" data-lab-close aria-label="Close viewer">&times;</button>
+  <button class="lightbox-nav lightbox-prev" type="button" data-lab-prev aria-label="Previous item">&#8249;</button>
+  <button class="lightbox-nav lightbox-next" type="button" data-lab-next aria-label="Next item">&#8250;</button>
+  <figure class="lightbox-figure">
+    <div class="lightbox-stage" data-lab-stage></div>
+  </figure>
+  <p class="lightbox-count" aria-live="polite" data-lab-count></p>
+</div>
+
+<footer class="site-footer" data-label="Colophon">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+    <p class="footer-note">Built with vanilla HTML, CSS and JavaScript.</p>
+    <p class="footer-credit">
+      Capricorn artwork: <a href="https://vectorstock.com/38105425" target="_blank" rel="noopener noreferrer">VectorStock 38105425</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/js/sectionnav.js" defer></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

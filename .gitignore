@@ -4,9 +4,21 @@ Thumbs.db
 
 # Editors
 .vscode/*
+.kilo/*
 !.vscode/settings.json
 .idea/
 
 # Logs
 *.log
 npm-debug.log*
+
+# Original camera captures — sources for /img, not shipped
+real_img/
+real_code/
+.kilo
+
+# Source screenshots — originals, not shipped
+screenshots/
+
+# Purchased/downloaded vector source files (.ai, .eps, .pdf) — not for the repo
+vectorstock_38105425/

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Capricorn goat head with curved horns and crown">
+  <defs>
+    <linearGradient id="mH" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#b9c2ca"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="200" height="200" rx="46" fill="#0a0a0c"/>
+  <circle cx="100" cy="108" r="86" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1.4"/>
+
+  <g fill="none" stroke="url(#mH)" stroke-linecap="round">
+    <path d="M79 84C61 80 45 70 35 56" stroke-width="17"/>
+    <path d="M35 56C28 46 24 34 26 23" stroke-width="9"/>
+    <path d="M121 84c18-4 34-14 44-28" stroke-width="17"/>
+    <path d="M165 56c7-10 11-22 9-33" stroke-width="9"/>
+  </g>
+
+  <g fill="url(#mH)">
+    <path d="M19 12l10 4-5 10z"/>
+    <path d="M181 12l-10 4 5 10z"/>
+    <path d="M69 86c-16-5-31 3-35 16 14 4 27-2 35-10z"/>
+    <path d="M131 86c16-5 31 3 35 16-14 4-27-2-35-10z"/>
+    <path d="M100 62c-18 0-30 12-30 32 0 14 3 24 6 34 2 12 10 22 24 30 14-8 22-18 24-30 3-10 6-20 6-34 0-20-12-32-30-32z"/>
+    <path d="M68 60l12-32 13 18 7-28 7 28 13-18 12 32z"/>
+  </g>
+
+  <g fill="#0a0a0c">
+    <path d="M70 92c7-11 24-11 30 0-7 10-24 10-30 0z"/>
+    <path d="M130 92c-7-11-24-11-30 0 7 10 24 10 30 0z"/>
+    <path d="M65 76l33 6v7l-33-6z"/>
+    <path d="M135 76l-33 6v7l33-6z"/>
+    <path d="M89 134c4-5 10-5 13 0-3 5-10 5-13 0z"/>
+    <path d="M111 134c-4-5-10-5-13 0 3 5 10 5 13 0z"/>
+    <path d="M87 150c7-4 18-4 26 0-8 5-19 5-26 0z"/>
+  </g>
+
+  <circle cx="84" cy="91" r="5" fill="#ffffff"/>
+  <circle cx="116" cy="91" r="5" fill="#ffffff"/>
+  <circle cx="80" cy="32" r="4" fill="#0a0a0c"/>
+  <circle cx="120" cy="32" r="4" fill="#0a0a0c"/>
+  <circle cx="100" cy="22" r="4.4" fill="#0a0a0c"/>
+</svg>
