@@ -16,10 +16,15 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="canonical" href="https://www.jraikhola.com.np/">
-<link rel="icon" type="image/svg+xml" href="/img/capricorn.svg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1117'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' fill='white' font-family='Arial, sans-serif' font-size='30' font-weight='700'%3EJ%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="preload" as="image" href="/img/hero-core.jpg">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/portfolio.css">
 </head>
 <body>
 
@@ -31,9 +36,7 @@
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a class="brand" href="#top">
-      <span class="brand-mark" aria-hidden="true">
-        <img src="/img/capricorn.svg" alt="" width="36" height="36" decoding="async">
-      </span>
+      <span class="brand-mark" aria-hidden="true">JR</span>
       <span class="brand-name">Janak Raikhola</span>
     </a>
 
@@ -46,13 +49,14 @@
     <nav class="primary-nav" id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#voices">Voices</a></li>
+        <li><a href="/story.html">Story</a></li>
+        <li><a href="/articles.html">Articles</a></li>
+        <li><a href="/case-study.html">Case study</a></li>
+        <li><a href="/photos.html">Photos</a></li>
+        <li><a href="/research.html">Research</a></li>
+        <li><a href="/resume.html">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="nav-cta" href="https://github.com/lushiv" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
       </ul>
     </nav>
   </div>
@@ -78,78 +82,61 @@
       </div>
     </div>
 
-    <div class="container hero-grid">
-
-      <div class="hero-copy">
+    <div class="container hero-grid hero-grid-short">
+      <div class="hero-copy hero-copy-short">
         <p class="hero-eyebrow">
           <span class="pulse" aria-hidden="true"></span>
-          Backend Architect &middot; AI, IoT &amp; Robotics Researcher
+          Founder &amp; CEO of FutureStoreAI &middot; Researcher &middot; Learner
         </p>
 
         <h1 id="hero-title">
-          Architecting Autonomous Systems &amp; Core Backends
+          I build systems, products, and ideas that turn complex tech into real-world impact.
         </h1>
 
         <p class="hero-lede">
-          Hi, I'm Janak Singh Raikhola. I move from remote mountain infrastructure to global
-          distributed systems, bridging high-scale server architecture, AI agents and IoT hardware.
+          I’m Janak Singh Raikhola — a backend engineer, researcher, and founder helping teams ship resilient systems, AI workflows, and practical digital products from concept to production.
         </p>
 
-        <div class="terminal" role="img" aria-label="Terminal: distributed-systems engineer, Go Python Node, ai-agents, iot-robotics, web3">
-          <div class="terminal-bar">
-            <span class="terminal-dot" aria-hidden="true"></span>
-            <span class="terminal-dot" aria-hidden="true"></span>
-            <span class="terminal-dot" aria-hidden="true"></span>
-            <span class="terminal-title">jraikhola.core.sys</span>
+        <div class="hero-actions hero-actions-short">
+          <a class="btn btn-primary" href="https://wa.me/9779860332656" target="_blank" rel="noopener noreferrer">WhatsApp me ↗</a>
+          <a class="btn btn-ghost" href="/case-study.html">View case studies</a>
+          <a class="btn btn-ghost" href="/resume.html">View resume</a>
+        </div>
+
+        <dl class="hero-stats hero-stats-short">
+          <div class="stat">
+            <dt>Projects</dt>
+            <dd>100+</dd>
           </div>
-          <pre class="terminal-body"><code><span class="t-prompt">$</span> <span class="t-caret" aria-hidden="true"></span><span class="t-text" data-typed='["whoami","-> Janak Singh Raikhola","stack  -> Go · Python · Node.js","focus  -> ai-agents · iot-robotics","chain  -> ethereum · solana","ship    -> microservices · event-driven","done"]'></span></code></pre>
-        </div>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">Explore research &amp; work</a>
-          <a class="btn btn-ghost" href="https://github.com/lushiv" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-
-        <dl class="hero-stats">
+          <div class="stat">
+            <dt>Client satisfaction</dt>
+            <dd>100%</dd>
+          </div>
           <div class="stat">
             <dt>Experience</dt>
-            <dd>6+ years</dd>
-          </div>
-          <div class="stat">
-            <dt>Job success</dt>
-            <dd><a href="https://www.upwork.com/freelancers/~01c88ff1cc7889d204?viewMode=1" target="_blank" rel="noopener noreferrer">100% on Upwork</a></dd>
-          </div>
-          <div class="stat">
-            <dt>Research</dt>
-            <dd>AI &amp; IoT active</dd>
-          </div>
-          <div class="stat">
-            <dt>Based in</dt>
-            <dd>Nepal (UTC +05:45)</dd>
+            <dd>10+ years</dd>
           </div>
         </dl>
       </div>
 
-      <div class="hero-visual">
-        <div class="sys-card">
+      <div class="hero-visual hero-visual-short">
+        <div class="sys-card hero-dashboard-card">
           <div class="sys-head">
             <span class="sys-dot" aria-hidden="true"></span>
             <span class="sys-dot" aria-hidden="true"></span>
             <span class="sys-dot" aria-hidden="true"></span>
-            <span class="sys-title">jraikhola.core.sys</span>
+            <span class="sys-title">futurestore.ai</span>
           </div>
           <div class="sys-frame">
-            <img src="/img/hero-core.jpg" width="1408" height="768" alt="Abstract high-tech visualisation of distributed backend infrastructure, neural IoT pipelines and robotics architecture" loading="eager" decoding="async">
+            <img src="/img/hero-core.jpg" width="1408" height="768" alt="Abstract dashboard preview for product and system design" loading="eager" decoding="async">
             <span class="sys-scan" aria-hidden="true"></span>
           </div>
-          <p class="sys-caption">
-            <span class="sys-caption-dot" aria-hidden="true"></span>
-            Neural IoT &amp; Microservices
-          </p>
+          <div class="hero-dashboard-meta">
+            <span>Research-driven builds</span>
+            <span>AI · Web3 · Backend</span>
+          </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -203,11 +190,11 @@
     </div>
   </section>
 
-  <section class="section" id="about" data-label="About" aria-labelledby="about-title">
+  <section class="section section-alt" id="about" data-label="About" aria-labelledby="about-title">
     <div class="container">
       <header class="section-head">
         <p class="section-label">01 — About</p>
-        <h2 id="about-title">Backend first, blockchain by choice</h2>
+        <h2 id="about-title">From a remote village to global systems thinking</h2>
       </header>
 
       <div class="about-grid">
@@ -239,9 +226,213 @@
             <li><span class="facts-key">Databases</span><span class="facts-val">PostgreSQL, MySQL, MongoDB, Redis</span></li>
             <li><span class="facts-key">Queues</span><span class="facts-val">RabbitMQ, Kafka, Socket.io</span></li>
             <li><span class="facts-key">Cloud</span><span class="facts-val">AWS, DigitalOcean, GCP</span></li>
-            <li><span class="facts-key">Sign</span><span class="facts-val">Capricorn &#2651; &middot; ruled by Saturn &#9804;</span></li>
           </ul>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="credentials" data-label="Credentials" aria-labelledby="credentials-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">01.5 — Education & credentials</p>
+        <h2 id="credentials-title">Learning, certifications, and proof of work</h2>
+      </header>
+
+      <div class="cred-grid">
+        <article class="cred-card">
+          <h3>Education</h3>
+          <div class="cred-items">
+            <div class="cred-item">
+              <img src="/education_logos/IGNOU-Preview.png" alt="IGNOU logo" loading="lazy" decoding="async">
+              <div>
+                <strong>Bachelor of Computer Applications</strong>
+                <span>IGNOU</span>
+              </div>
+            </div>
+            <div class="cred-item">
+              <img src="/education_logos/images.jpeg" alt="Kathmandu Institute of Technology logo" loading="lazy" decoding="async">
+              <div>
+                <strong>Diploma in Engineering</strong>
+                <span>Electrical &amp; Electronics · Kathmandu Institute of Technology</span>
+              </div>
+            </div>
+            <div class="cred-item">
+              <img src="/education_logos/alisoncourses_logo.jpeg" alt="Alison logo" loading="lazy" decoding="async">
+              <div>
+                <strong>Diploma in Entrepreneurship</strong>
+                <span>Alison</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cred-card">
+          <h3>Certificates</h3>
+          <div class="cred-items">
+            <div class="cred-item">
+              <img src="/education_logos/university_of_california_at_san_diego_logo.jpeg" alt="University of California San Diego logo" loading="lazy" decoding="async">
+              <div>
+                <strong>Algorithmic Toolbox</strong>
+                <span>UC San Diego</span>
+              </div>
+            </div>
+            <div class="cred-item">
+              <img src="/certificates/CERTIFICATE_LANDING_PAGE~MHGWFBRWUJTY.jpeg" alt="Algorithmic Toolbox certificate preview" loading="lazy" decoding="async">
+              <div>
+                <strong>Certificate Preview</strong>
+                <span>Issued Jul 2025</span>
+              </div>
+            </div>
+            <div class="cred-item">
+              <a href="/certificates/Coursera%20DQKLDWBVUVQU.pdf" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.google.com/favicon.ico" alt="Google certificate logo" loading="lazy" decoding="async">
+              </a>
+              <div>
+                <strong>Ask Questions to Make Data-Driven Decisions</strong>
+                <span>Google</span>
+              </div>
+            </div>
+            <div class="cred-item">
+              <a href="/certificates/Coursera%20E48DCREULJSA.pdf" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.google.com/favicon.ico" alt="Google certificate logo" loading="lazy" decoding="async">
+              </a>
+              <div>
+                <strong>Foundations: Data, Data, Everywhere</strong>
+                <span>Google</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cred-card">
+          <h3>Recommendations</h3>
+          <div class="reco-grid">
+            <a href="https://www.linkedin.com/in/mahmudul-online" target="_blank" rel="noopener noreferrer" aria-label="K M Mahmudul Hasan on LinkedIn"><img src="/recommenders_img/1km mahamdul.jpeg" alt="Recommendation from K M Mahmudul Hasan" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/godfreylebo" target="_blank" rel="noopener noreferrer" aria-label="Godfrey Lebo on LinkedIn"><img src="/recommenders_img/godfre.jpeg" alt="Recommendation from Godfrey Lebo" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/ismailgorkemkara" target="_blank" rel="noopener noreferrer" aria-label="İsmail Görkem Kara on LinkedIn"><img src="/recommenders_img/ismail.jpeg" alt="Recommendation from Ismail Görkem Kara" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/logan-darrow-clements-8860b21" target="_blank" rel="noopener noreferrer" aria-label="Logan Darrow Clements on LinkedIn"><img src="/recommenders_img/logan.jpeg" alt="Recommendation from Logan Darrow Clements" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/mnzel" target="_blank" rel="noopener noreferrer" aria-label="Manzeel Uprety on LinkedIn"><img src="/recommenders_img/manze.jpeg" alt="Recommendation from Manzeel Uprety" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/saagarshrest" target="_blank" rel="noopener noreferrer" aria-label="Saagar Shrestha on LinkedIn"><img src="/recommenders_img/sagar.jpeg" alt="Recommendation from Saagar Shrestha" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/th%C3%A0nh-ph%E1%BA%A1m-56b20314b" target="_blank" rel="noopener noreferrer" aria-label="Thành Phạm on LinkedIn"><img src="/recommenders_img/thanphan.jpeg" alt="Recommendation from Thành Phạm" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/shanaka-perera-34a93687" target="_blank" rel="noopener noreferrer" aria-label="Shanaka Perera on LinkedIn"><img src="/recommenders_img/shanaka.jpeg" alt="Recommendation from Shanaka Perera" loading="lazy" decoding="async"></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="recommendations" data-label="Recommendations" aria-labelledby="recommendations-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-label">01.7 — What colleagues say</p>
+        <h2 id="recommendations-title">Recommendations from the people I’ve worked with</h2>
+      </header>
+
+      <div class="recommendation-grid">
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/1km mahamdul.jpeg" alt="K M Mahmudul Hasan" loading="lazy" decoding="async">
+            <div>
+              <h3>K M Mahmudul Hasan</h3>
+              <span>Backend Lead, SUPER TRUST</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="Bangladesh">🇧🇩</span> Bangladesh</p>
+          <p>“I had the pleasure of working with Janak… He is technically strong, dependable, and consistently delivers high-quality, scalable solutions. His problem-solving skills, ownership, and collaborative attitude make him a valuable teammate.”</p>
+          <p><a href="https://www.linkedin.com/in/mahmudul-online" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
+
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/thanphan.jpeg" alt="Thành Phạm" loading="lazy" decoding="async">
+            <div>
+              <h3>Thành Phạm</h3>
+              <span>Senior Flutter Developer</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="Vietnam">🇻🇳</span> Vietnam</p>
+          <p>“I have worked with Janak on multiple tasks and have always been impressed by his proactive approach to problem-solving. He is a skilled backend developer who communicates clearly and works great within a team.”</p>
+          <p><a href="https://www.linkedin.com/in/th%C3%A0nh-ph%E1%BA%A1m-56b20314b" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
+
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/godfre.jpeg" alt="Godfrey Lebo" loading="lazy" decoding="async">
+            <div>
+              <h3>Godfrey Lebo</h3>
+              <span>Technical Product Owner, GlobalMPC</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="South Africa">🇿🇦</span> South Africa</p>
+          <p>“I have worked with Janak for almost 3 years; his backend and blockchain skills are amazing. He uses the debugger to visualize code-flow and fix almost any type of bug.”</p>
+          <p><a href="https://www.linkedin.com/in/godfreylebo" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
+
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/manze.jpeg" alt="Manzeel Uprety" loading="lazy" decoding="async">
+            <div>
+              <h3>Manzeel Uprety</h3>
+              <span>Lead QA, Product Engineering</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="Nepal">🇳🇵</span> Nepal</p>
+          <p>“What stood out most was his genuine curiosity… always digging into something new, asking the right questions and pushing himself to understand things at a deeper level.”</p>
+          <p><a href="https://www.linkedin.com/in/mnzel" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
+
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/ismail.jpeg" alt="İsmail Görkem Kara" loading="lazy" decoding="async">
+            <div>
+              <h3>İsmail Görkem Kara</h3>
+              <span>Product &amp; Engineering Lead</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="Turkey">🇹🇷</span> Turkey</p>
+          <p>“He has complemented his skills and knowledge in backend development with expertise in Web3 and blockchain… He knows exactly how to overcome challenges with his production experience.”</p>
+          <p><a href="https://www.linkedin.com/in/ismailgorkemkara" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
+
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/logan.jpeg" alt="Logan Darrow Clements" loading="lazy" decoding="async">
+            <div>
+              <h3>Logan Darrow Clements</h3>
+              <span>Software Team Lead</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="United Kingdom">🇬🇧</span> United Kingdom</p>
+          <p>“Janak did an excellent job handling the core tech functions of our software network… He’s a top quality backend core tech engineer.”</p>
+          <p><a href="https://www.linkedin.com/in/logan-darrow-clements-8860b21" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
+
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/sagar.jpeg" alt="Saagar Shrestha" loading="lazy" decoding="async">
+            <div>
+              <h3>Saagar Shrestha</h3>
+              <span>AI Powered Designer</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="Nepal">🇳🇵</span> Nepal</p>
+          <p>“Janak is a highly skilled software developer who consistently delivers quality work and demonstrates excellent problem-solving abilities. He is intelligent, dependable, and quick to adapt to new technologies.”</p>
+          <p><a href="https://www.linkedin.com/in/saagarshrest" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
+
+        <article class="recommendation-card">
+          <div class="recommendation-head">
+            <img src="/recommenders_img/shanaka.jpeg" alt="Shanaka Perera" loading="lazy" decoding="async">
+            <div>
+              <h3>Shanaka Perera</h3>
+              <span>Solution Architect</span>
+            </div>
+          </div>
+          <p class="recommendation-meta"><span aria-label="Sri Lanka">🇱🇰</span> Sri Lanka</p>
+          <p>“Working with Janak has been an absolute privilege. He’s not only a talented backend engineer but also someone who brings positive energy and collaboration into every discussion.”</p>
+          <p><a href="https://www.linkedin.com/in/shanaka-perera-34a93687" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></p>
+        </article>
       </div>
     </div>
   </section>
@@ -256,6 +447,18 @@
           and freelance engagements.
         </p>
       </header>
+
+      <div class="company-badges" aria-label="Company and client logos for Janak's experience">
+        <img src="/company_logos/futurestore_ai_logo.jpeg" alt="FutureStoreAI" loading="lazy" decoding="async">
+        <img src="/company_logos/fastusers.jpeg" alt="FastUsers" loading="lazy" decoding="async">
+        <img src="/company_logos/msquare_global_logo.jpeg" alt="MSQUARE Global" loading="lazy" decoding="async">
+        <img src="/company_logos/must_company_logo.jpeg" alt="MUST Company" loading="lazy" decoding="async">
+        <img src="/company_logos/GoalprizeLogo_20220518.webp" alt="Goalprize" loading="lazy" decoding="async">
+        <img src="/company_logos/bitsbeat_it_solution_logo.jpeg" alt="Bitsbeat" loading="lazy" decoding="async">
+        <img src="/company_logos/ibriz.jpeg" alt="iBriz.ai" loading="lazy" decoding="async">
+        <img src="/company_logos/techflow.jpeg" alt="TechFlow" loading="lazy" decoding="async">
+        <img src="/company_logos/upwork_logo.jpeg" alt="Upwork" loading="lazy" decoding="async">
+      </div>
 
       <ol class="timeline">
 
@@ -831,335 +1034,6 @@
     </div>
   </section>
 
-  <section class="section" id="education" data-label="Education" aria-labelledby="education-title">
-    <div class="container">
-      <header class="section-head">
-        <p class="section-label">08 — Learning</p>
-        <h2 id="education-title">Education &amp; credentials</h2>
-      </header>
-
-      <div class="edu-grid">
-        <div class="edu-col">
-          <h3 class="col-title">Education</h3>
-          <ul class="edu-list">
-            <li class="edu-item">
-              <h4>Diploma in Entrepreneurship</h4>
-              <p class="edu-org">Alison</p>
-              <p class="edu-meta">Jan 2024 — Jun 2026 &middot; Grade 80%</p>
-            </li>
-            <li class="edu-item">
-              <h4>Bachelor of Computer Applications</h4>
-              <p class="edu-org">Indira Gandhi National Open University</p>
-              <p class="edu-meta">Computer Engineering</p>
-            </li>
-            <li class="edu-item">
-              <h4>Diploma in Engineering</h4>
-              <p class="edu-org">Kathmandu Institute of Technology</p>
-              <p class="edu-meta">Electrical &amp; Electronics &middot; Feb 2014 — Jan 2017 &middot; 65%</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="edu-col">
-          <h3 class="col-title">Certifications</h3>
-          <ul class="edu-list">
-            <li class="edu-item">
-              <h4>EF SET English Certificate</h4>
-              <p class="edu-org">B2 Upper Intermediate &middot; 52/100</p>
-              <p class="edu-meta">Issued May 2026</p>
-            </li>
-            <li class="edu-item">
-              <h4>Algorithmic Toolbox</h4>
-              <p class="edu-org">UC San Diego — Rady School of Management</p>
-              <p class="edu-meta">Issued Jul 2025 &middot; ID MHGWFBRWUJTY</p>
-            </li>
-            <li class="edu-item">
-              <h4>Ask Questions to Make Data-Driven Decisions</h4>
-              <p class="edu-org">Google</p>
-              <p class="edu-meta">Issued Jun 2021 &middot; ID DQKLDWBVUVQU</p>
-            </li>
-            <li class="edu-item">
-              <h4>Foundations: Data, Data, Everywhere</h4>
-              <p class="edu-org">Google</p>
-              <p class="edu-meta">Issued Jun 2021 &middot; ID E48DCREULJSA</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="voices" data-label="Voices" aria-labelledby="voices-title">
-    <div class="container">
-      <header class="section-head">
-        <p class="section-label">09 — Voices</p>
-        <h2 id="voices-title">What colleagues say</h2>
-        <p class="section-desc">
-          Eight recommendations from people I have worked with directly &mdash; backend leads,
-          architects, QA and design, across South Korea, Nepal, Sri Lanka, Bangladesh and beyond.
-        </p>
-      </header>
-
-      <div class="voice-columns">
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #ffffff; --b: #ff7a45;" aria-hidden="true">KM</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">K M Mahmudul Hasan</figcaption>
-              <p class="voice-role">Backend Lead, SUPER TRUST</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/mahmudul-online" target="_blank" rel="noopener noreferrer" aria-label="K M Mahmudul Hasan on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              I had the pleasure of working with Janak, and I highly recommend him as a backend
-              engineer. He is technically strong, dependable, and consistently delivers
-              high-quality, scalable solutions. His problem-solving skills, ownership, and
-              collaborative attitude make him a valuable teammate. Janak is always eager to learn
-              and continuously improves his craft. I&rsquo;m confident he will be a great asset to
-              any engineering team. Wishing him continued success!
-            </p>
-          </blockquote>
-          <p class="voice-date">July 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #45d4ff; --b: #4f8bff;" aria-hidden="true">TP</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">Th&agrave;nh Ph&#7841;m</figcaption>
-              <p class="voice-role">Senior Flutter Developer</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/th%C3%A0nh-ph%E1%BA%A1m-56b20314b" target="_blank" rel="noopener noreferrer" aria-label="Thành Phạm on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              I have worked with Janak on multiple tasks and have always been impressed by his
-              proactive approach to problem-solving. He is a skilled backend developer who
-              communicates clearly and works great within a team. His friendly attitude and strong
-              work ethic make him a fantastic colleague, and I would gladly recommend him for any
-              technical position.
-            </p>
-          </blockquote>
-          <p class="voice-date">July 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #b6f24a; --b: #2fd67b;" aria-hidden="true">GL</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">Godfrey Lebo</figcaption>
-              <p class="voice-role">Technical Product Owner, GlobalMPC</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/godfreylebo" target="_blank" rel="noopener noreferrer" aria-label="Godfrey Lebo on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              I have worked with Janak for almost 3 years; his backend and blockchain skills are
-              amazing. One thing I remember him for the most is how well he uses the debugger to
-              visualize code-flow and fix almost any type of bug. I won&rsquo;t recommend Janak to
-              any simple and easy project, he will easily get bored there. But if you&rsquo;ve
-              got a highly complicated and mind-bending project, then I recommend Janak for you,
-              and you will thank me later.
-            </p>
-          </blockquote>
-          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #7bd3ff; --b: #3d7bff;" aria-hidden="true">MU</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">Manzeel Uprety</figcaption>
-              <p class="voice-role">Lead QA, Product Engineering</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/mnzel" target="_blank" rel="noopener noreferrer" aria-label="Manzeel Uprety on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              I had the pleasure of working alongside Janak at Bitsbeat. Even without a direct
-              working relationship, it was hard not to notice how he carried himself as an
-              engineer. What stood out most was his genuine curiosity &mdash; always digging into
-              something new, asking the right questions and pushing himself to understand things
-              at a deeper level. That kind of learning attitude is rare, and it made him someone
-              you could count on to grow with the challenges thrown at him. He was focused,
-              consistent, and never the kind of person who cut corners when things got hard. Janak
-              is now building his own startup, and honestly, I can&rsquo;t think of a better fit.
-            </p>
-          </blockquote>
-          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #e1306c; --b: #ff8a5b;" aria-hidden="true">&Icirc;K</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">&Icirc;smail G&ouml;rkem Kara</figcaption>
-              <p class="voice-role">Product &amp; Engineering Lead</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/ismailgorkemkara" target="_blank" rel="noopener noreferrer" aria-label="İsmail Görkem Kara on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              I had the opportunity to work with Janak for a long time. He has always amazed me
-              with his drive to improve himself and go the extra mile. He has complemented his
-              skills and knowledge in backend development with expertise in Web3 and blockchain.
-              He knows exactly how to overcome challenges with his production experience. He is a
-              true team player, and I would love to work with him again on a project in the
-              future.
-            </p>
-          </blockquote>
-          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #ffffff; --b: #b6f24a;" aria-hidden="true">SS</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">Saagar Shrestha</figcaption>
-              <p class="voice-role">AI Powered Designer</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/saagarshrest" target="_blank" rel="noopener noreferrer" aria-label="Saagar Shrestha on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              Janak is a highly skilled software developer who consistently delivers quality work
-              and demonstrates excellent problem-solving abilities. He is intelligent, dependable,
-              and quick to adapt to new technologies. What sets him apart is his friendly nature
-              and ability to work effectively with everyone around him. I thoroughly enjoyed
-              working with Janak and would highly recommend him to any team looking for a talented
-              developer and a great colleague.
-            </p>
-          </blockquote>
-          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #45d4ff; --b: #b6f24a;" aria-hidden="true">LC</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">Logan Darrow Clements</figcaption>
-              <p class="voice-role">Software Team Lead</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/logan-darrow-clements-8860b21" target="_blank" rel="noopener noreferrer" aria-label="Logan Darrow Clements on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              Janak did an excellent job handling the core tech functions of our software network.
-              He interacted well with all the team members located in different nations. He&rsquo;s a
-              top quality backend core tech engineer.
-            </p>
-          </blockquote>
-          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-        <figure class="voice-card">
-          <div class="voice-head">
-            <span class="voice-avatar" style="--a: #8f7bff; --b: #45d4ff;" aria-hidden="true">SP</span>
-            <div class="voice-id">
-              <figcaption class="voice-name">Shanaka Perera</figcaption>
-              <p class="voice-role">Solution Architect</p>
-            </div>
-            <a class="voice-link" href="https://www.linkedin.com/in/shanaka-perera-34a93687" target="_blank" rel="noopener noreferrer" aria-label="Shanaka Perera on LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05a4.2 4.2 0 0 1 3.75-2c4 0 4.9 2.6 4.9 6V21h-4v-5.1c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            </a>
-          </div>
-          <blockquote>
-            <p>
-              Working with Janak has been an absolute privilege. He&rsquo;s not only a talented
-              backend engineer but also someone who brings positive energy and collaboration into
-              every discussion. Whether it&rsquo;s optimizing APIs, improving system performance,
-              or helping teammates debug tricky issues, he always steps up. He&rsquo;s dependable,
-              thoughtful, and truly committed to building great software.
-            </p>
-          </blockquote>
-          <p class="voice-date">June 2026 &middot; 1st-degree recommendation</p>
-        </figure>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="devotion" data-label="Devotion" aria-labelledby="devotion-title">
-    <div class="container devotion-inner">
-      <div class="devotion-art" data-third-eye>
-        <svg viewBox="0 0 320 320" role="img" aria-label="Meditating silhouette beneath a glowing third eye and rotating mandala rings">
-          <defs>
-            <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#f2f2f5" stop-opacity="0.95"/>
-              <stop offset="45%" stop-color="#ffffff" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#c9d1d9" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="bodyFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
-              <stop offset="100%" stop-color="#c9d1d9" stop-opacity="0.35"/>
-            </linearGradient>
-          </defs>
-
-          <g class="mandala" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5">
-            <circle cx="160" cy="160" r="152" stroke-dasharray="2 10" opacity="0.55"/>
-            <circle cx="160" cy="160" r="126" stroke-dasharray="26 14" opacity="0.4"/>
-            <circle cx="160" cy="160" r="104" stroke-dasharray="1 8" opacity="0.35"/>
-          </g>
-
-          <g class="trishul" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.65">
-            <path d="M160 44 L160 96"/>
-            <path d="M160 44 C150 56 144 68 144 82"/>
-            <path d="M160 44 C170 56 176 68 176 82"/>
-          </g>
-
-          <circle class="eye-halo" cx="160" cy="120" r="46" fill="url(#eyeGlow)"/>
-          <ellipse class="eye" cx="160" cy="120" rx="17" ry="9" fill="none" stroke="#ffffff" stroke-width="2.4"/>
-          <circle class="eye-pupil" cx="160" cy="120" r="3.4" fill="#f2f2f5"/>
-
-          <g class="figure" fill="url(#bodyFill)">
-            <circle cx="160" cy="140" r="17"/>
-            <path d="M160 158c-19 0-33 12-37 30-2 9-9 16-20 22h114c-11-6-18-13-20-22-4-18-18-30-37-30z"/>
-            <path d="M86 226c10 12 36 18 74 18s64-6 74-18c4 14-28 26-74 26s-78-12-74-26z"/>
-          </g>
-
-          <path class="ground" d="M64 268h192" stroke="#ffffff" stroke-width="1.4" opacity="0.4" stroke-linecap="round"/>
-        </svg>
-      </div>
-
-      <div class="devotion-copy">
-        <p class="section-label">10 — Stillness</p>
-        <h2 id="devotion-title">Calm before the build</h2>
-        <p>
-          Before any system goes live there is a quiet moment where the shape of the problem
-          settles. Meditation is part of my process, not decoration &mdash; the same discipline
-          that keeps a distributed system honest under load keeps the mind clear when the
-          requirements are still moving.
-        </p>
-        <blockquote class="devotion-quote">
-          <p class="devotion-mantra" lang="sa" aria-hidden="true">&#2384;&#2381;&#2352;</p>
-          <p>
-            Tat tvam asi &mdash; you are that. The engineer and the system are never separate:
-            what you bring into the work is what the work becomes.
-          </p>
-        </blockquote>
-        <p class="devotion-note">
-          <span class="devotion-dot" aria-hidden="true"></span>
-          Trishul, third eye, mandala &mdash; drawn in SVG, no image assets.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <section class="statement" data-label="Direction" aria-labelledby="statement-title">
     <div class="statement-media" aria-hidden="true">
@@ -1208,7 +1082,7 @@
         </li>
         <li>
           <span class="contact-key">Email</span>
-          <a class="contact-val" href="mailto:hello@jraikhola.com.np">hello@jraikhola.com.np</a>
+          <a class="contact-val" href="mailto:thejanak.ai@gmail.com">thejanak.ai@gmail.com</a>
         </li>
         <li>
           <span class="contact-key">GitHub</span>
@@ -1241,10 +1115,7 @@
 <footer class="site-footer" data-label="Colophon">
   <div class="container footer-inner">
     <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
-    <p class="footer-note">Built with vanilla HTML, CSS and JavaScript.</p>
-    <p class="footer-credit">
-      Capricorn artwork: <a href="https://vectorstock.com/38105425" target="_blank" rel="noopener noreferrer">VectorStock 38105425</a>
-    </p>
+    <p class="footer-note">© 2026 Janak Singh Raikhola</p>
   </div>
 </footer>
 

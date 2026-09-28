@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Articles — Janak Singh Raikhola</title>
+  <meta name="description" content="A collection of writing, research notes, and thought pieces by Janak Singh Raikhola on AI, UX, accessibility, and technology design.">
+  <link rel="icon" type="image/svg+xml" href="/img/capricorn.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-name">Janak Raikhola</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/story.html">Story</a></li>
+          <li><a href="/articles.html" aria-current="true">Articles</a></li>
+          <li><a href="/case-study.html">Case study</a></li>
+          <li><a href="/photos.html">Photos</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-kicker">Writing & research</p>
+        <h1>Thoughts on systems, autonomy, and how people experience technology.</h1>
+        <p class="page-intro">I write about the practical realities of backend engineering, AI adoption, IoT systems, and the human side of building software that lasts in the real world.</p>
+      </div>
+    </section>
+
+    <section class="section page-section">
+      <div class="container article-list">
+        <article class="article-card feature-card">
+          <div class="meta-row">
+            <span class="page-tag">Backend systems</span>
+            <span class="page-date">2026</span>
+          </div>
+          <div class="image-panel">
+            <img src="/img/iot-robotics/IMG_1876.jpg" alt="Research and robotics setup" loading="lazy" decoding="async">
+          </div>
+          <h2>Designing for reliability in backend systems</h2>
+          <p>Reliable products are not built by shipping fast alone. They are built by planning for failure, controlling concurrency, and treating state as a product decision rather than an implementation detail.</p>
+          <a href="/article-backend-systems.html" class="text-link">Read article <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="article-card">
+          <div class="meta-row">
+            <span class="page-tag">IoT</span>
+            <span class="page-date">2026</span>
+          </div>
+          <div class="image-panel compact-panel">
+            <img src="/img/iot-robotics/IMG_1986.jpg" alt="IoT edge lab" loading="lazy" decoding="async">
+          </div>
+          <h3>Why IoT should be designed around trust, not just sensors</h3>
+          <p>When edge devices connect to the cloud, the real challenge is not collecting more data — it is keeping signals honest, secure, and understandable.</p>
+          <a href="/article-iot.html" class="text-link">Read article <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="article-card">
+          <div class="meta-row">
+            <span class="page-tag">Robotics</span>
+            <span class="page-date">2026</span>
+          </div>
+          <div class="image-panel compact-panel">
+            <img src="/img/iot-robotics/IMG_1993.jpg" alt="Robotics research hardware" loading="lazy" decoding="async">
+          </div>
+          <h3>From sensors to movement: the real engineering challenge in robotics</h3>
+          <p>Robotics moves beyond theory when the system must react reliably in messy conditions. Real-world autonomy depends as much on software discipline as on hardware ambition.</p>
+          <a href="/article-robotics.html" class="text-link">Read article <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="article-card">
+          <div class="meta-row">
+            <span class="page-tag">AI</span>
+            <span class="page-date">2025</span>
+          </div>
+          <div class="image-panel compact-panel">
+            <img src="/img/social/linkedin-must.jpg" alt="AI and product workflow" loading="lazy" decoding="async">
+          </div>
+          <h3>Why AI needs a thoughtful product experience</h3>
+          <p>AI is only useful when the interaction feels clear, trustable, and useful in context. The product layer is what turns a model into real value.</p>
+          <a href="/research.html" class="text-link">Read related research <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-label="Colophon">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+      <p class="footer-note">© 2026 Janak Singh Raikhola</p>
+    </div>
+  </footer>
+
+  <script src="/js/sectionnav.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

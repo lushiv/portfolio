@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why IoT should be designed around trust, not just sensors — Janak Singh Raikhola</title>
+  <meta name="description" content="A product and engineering article exploring why trustworthy IoT systems matter more than collecting more raw sensor data.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1117'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' fill='white' font-family='Arial, sans-serif' font-size='30' font-weight='700'%3EJ%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-name">Janak Raikhola</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/story.html">Story</a></li>
+          <li><a href="/articles.html" aria-current="true">Articles</a></li>
+          <li><a href="/case-study.html">Case study</a></li>
+          <li><a href="/photos.html">Photos</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-kicker">IoT</p>
+        <h1>Why IoT should be designed around trust, not just sensors</h1>
+        <p class="page-intro">When edge devices connect to the cloud, the real challenge is not collecting more data — it is keeping signals honest, secure, and understandable.</p>
+      </div>
+    </section>
+
+    <section class="section page-section">
+      <div class="container story-layout">
+        <article class="case-copy prose">
+          <p>IoT products often begin with hardware excitement: sensors, connectivity, dashboards, and remote monitoring. But the real complexity appears when those devices start making decisions or sending data that people rely on for operational safety, energy efficiency, or production health.</p>
+          <p>At that point, we are no longer building gadgets. We are building trust systems. The value of the product is not simply in technical capability; it is in whether the system consistently tells the truth.</p>
+
+          <h2>More data is not the same as better intelligence</h2>
+          <p>Many IoT projects fail because they optimize for volume rather than clarity. If a sensor reports noisy, delayed, or contradictory values, the product becomes harder to trust. A side effect of poor edge design is not just bad analytics, but poor decisions downstream.</p>
+          <p>Good IoT products decide how to validate signals, what to do during connectivity loss, and how to communicate uncertainty to users. The system should know when a reading may be stale or when a device is failing silently.</p>
+
+          <h2>Security and maintenance are design features</h2>
+          <p>Edge devices live in messy environments. They face power instability, network variability, physical tampering, and inconsistent updates. The product must assume the real world is unpredictable.</p>
+          <p>That means secure provisioning, safe fallback modes, clear device states, and simple maintenance paths. Trust is not earned by a beautiful dashboard alone — it is built through operational reliability.</p>
+
+          <h2>The product is the interface to reality</h2>
+          <p>For users, the most important part of an IoT experience is not the sensor itself; it is the confidence they have in what the system tells them. A trustworthy IoT product communicates uncertainty honestly, offers actionable insight, and fails in ways humans can understand.</p>
+        </article>
+
+        <aside class="story-aside">
+          <div class="stat-panel">
+            <p class="mini-label">Key principles</p>
+            <ul>
+              <li><strong>Verify</strong><span>signal quality before acting</span></li>
+              <li><strong>Graceful</strong><span>fallback during outages</span></li>
+              <li><strong>Secure</strong><span>device lifecycle and updates</span></li>
+              <li><strong>Clear</strong><span>communication of uncertainty</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-label="Colophon">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+      <p class="footer-note">© 2026 Janak Singh Raikhola</p>
+    </div>
+  </footer>
+
+  <script src="/js/sectionnav.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

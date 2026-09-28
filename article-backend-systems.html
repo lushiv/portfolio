@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Designing for reliability in backend systems — Janak Singh Raikhola</title>
+  <meta name="description" content="A practical article on backend reliability, failure planning, and why system design decisions matter when products scale.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1117'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' fill='white' font-family='Arial, sans-serif' font-size='30' font-weight='700'%3EJ%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-name">Janak Raikhola</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/story.html">Story</a></li>
+          <li><a href="/articles.html" aria-current="true">Articles</a></li>
+          <li><a href="/case-study.html">Case study</a></li>
+          <li><a href="/photos.html">Photos</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-kicker">Backend systems</p>
+        <h1>Designing for reliability in backend systems</h1>
+        <p class="page-intro">Reliable products are not built by shipping fast alone. They are built by planning for failure, controlling concurrency, and treating state as a product decision rather than an implementation detail.</p>
+      </div>
+    </section>
+
+    <section class="section page-section">
+      <div class="container story-layout">
+        <article class="case-copy prose">
+          <p>When teams talk about product reliability, they often focus on uptime and bug counts. Those are important, but the real work begins earlier: deciding how the system behaves under stress, partial failure, or unexpected input.</p>
+          <p>Backend systems rarely fail because of a single bad line of code. They fail when multiple moving parts assume too much confidence about sequencing, state, and time. A queue may retry too fast. A database may accept conflicting writes. A worker may process the same event twice because the deduplication boundary is unclear.</p>
+          <p>The strongest systems reduce uncertainty. They define state transitions clearly, identify the exact source of truth, and create a path to recover when something breaks mid-flight. That means paying attention to idempotency, retry policy, ordering guarantees, timeout behavior, and observability from the beginning.</p>
+
+          <h2>Design around failure, not just success</h2>
+          <p>Most product teams design a happy path and then assume the system can “handle” edge cases later. This is why operational debt accumulates so quickly. Production architecture should be designed around the failure curve: what happens when a provider is slow, a dependency is down, or a client retries the same request after a timeout?</p>
+          <p>We need systems that degrade gracefully, not just systems that recover magically. That is where disciplined architecture begins to matter. When you make failures visible and understandable, your team can react without panic.</p>
+
+          <h2>State is a product decision</h2>
+          <p>State management is not only an engineering concern. It is also a customer experience issue. A transaction that appears “complete” to one user and “pending” to another creates confusion, trust issues, and support load.</p>
+          <p>That is why backend reliability work often involves clarifying ownership. Who can mutate this record? What is the canonical source of truth? What happens when two services race to complete the same job?</p>
+
+          <h2>What good systems do</h2>
+          <p>Good backend design creates a predictable contract between services, between teams, and between business logic and runtime reality. It makes recovery easier, tracing easier, and communication easier. It lets humans make better product decisions because they can trust the system beneath the product surface.</p>
+        </article>
+
+        <aside class="story-aside">
+          <div class="stat-panel">
+            <p class="mini-label">Takeaways</p>
+            <ul>
+              <li><strong>Plan</strong><span>for failure on day one</span></li>
+              <li><strong>Control</strong><span>state and sequencing intentionally</span></li>
+              <li><strong>Observe</strong><span>all critical flows in production</span></li>
+              <li><strong>Design</strong><span>for trust, not just speed</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-label="Colophon">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+      <p class="footer-note">© 2026 Janak Singh Raikhola</p>
+    </div>
+  </footer>
+
+  <script src="/js/sectionnav.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From sensors to movement: the real engineering challenge in robotics — Janak Singh Raikhola</title>
+  <meta name="description" content="An article on the real-world engineering challenges of robotics: sensor fusion, reliable control loops, and disciplined systems thinking.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1117'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' fill='white' font-family='Arial, sans-serif' font-size='30' font-weight='700'%3EJ%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-name">Janak Raikhola</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/story.html">Story</a></li>
+          <li><a href="/articles.html" aria-current="true">Articles</a></li>
+          <li><a href="/case-study.html">Case study</a></li>
+          <li><a href="/photos.html">Photos</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-kicker">Robotics</p>
+        <h1>From sensors to movement: the real engineering challenge in robotics</h1>
+        <p class="page-intro">Robotics moves beyond theory when the system must react reliably in messy conditions. Real-world autonomy depends as much on software discipline as on hardware ambition.</p>
+      </div>
+    </section>
+
+    <section class="section page-section">
+      <div class="container story-layout">
+        <article class="case-copy prose">
+          <p>There is a difference between a robot that works in a lab and a robot that can operate under real-world uncertainty. In the lab, the environment is controlled. In the world, it is not.</p>
+          <p>Many robotics projects stall not because the hardware is weak, but because the software stack cannot reconcile sensor noise, timing drift, motion constraints, and failure recovery. Once a robot can physically move, the engineering challenge shifts from “can it work?” to “can it keep working under changing conditions?”</p>
+
+          <h2>Movement is a systems problem</h2>
+          <p>Walking, grasping, or navigating are not isolated tasks. They are orchestrated loops of perception, control, planning, and feedback. A system that reacts too slowly to sensor input will either stumble or overcorrect. A system that trusts raw input too much will misinterpret noise as a signal.</p>
+          <p>That is why robotics engineering is deeply rooted in timing, state estimation, and disciplined control loops. The intelligence is not in the movement alone; it is in how the system reads, interprets, and responds to the world.</p>
+
+          <h2>Real autonomy needs recovery logic</h2>
+          <p>Robots fail in ways that reveal the gap between conceptual design and operational reality. A wheel slips. A camera drops frames. A motor overheats. A gripper misreads the target. The real test is not whether a robot can start correctly, but whether it can fail gracefully and recover without escalating error.</p>
+          <p>That is where disciplined software architecture matters. You need robust state transitions, fallback behaviors, and enough observability to understand what went wrong after the fact.</p>
+
+          <h2>Build for the messy middle</h2>
+          <p>Most technical ambition stops at the prototype. The challenge is to move from “interesting” to dependable. That means building systems that can handle partial data, noisy actuation, and real home/industrial conditions without collapsing.</p>
+        </article>
+
+        <aside class="story-aside">
+          <div class="stat-panel">
+            <p class="mini-label">Robotics truths</p>
+            <ul>
+              <li><strong>Perception</strong><span>is uncertain in the real world</span></li>
+              <li><strong>Timing</strong><span>matters more than people expect</span></li>
+              <li><strong>Recovery</strong><span>is part of the design</span></li>
+              <li><strong>Trust</strong><span>comes from repeatability</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-label="Colophon">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+      <p class="footer-note">© 2026 Janak Singh Raikhola</p>
+    </div>
+  </footer>
+
+  <script src="/js/sectionnav.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Study — Blockchain Transaction Failure</title>
+  <meta name="description" content="A production case study on blockchain transaction failure caused by nonce desynchronization and resolved through a centralized Redis-backed transaction manager.">
+  <link rel="icon" type="image/svg+xml" href="/img/capricorn.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-name">Janak Raikhola</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/story.html">Story</a></li>
+          <li><a href="/articles.html">Articles</a></li>
+          <li><a href="/case-study.html" aria-current="true">Case study</a></li>
+          <li><a href="/photos.html">Photos</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero case-hero">
+      <div class="container">
+        <p class="page-kicker">Production case studies</p>
+        <h1>How I work through technical complexity, product pressure, and live system failures.</h1>
+        <p class="page-intro">From blockchain transaction reliability to distributed API thinking, my case studies focus on the decisions that keep systems running when the business depends on them.</p>
+      </div>
+    </section>
+
+    <section class="section page-section">
+      <div class="container case-study-list">
+        <article class="case-feature">
+          <div class="case-thumb">
+            <img src="/img/iot-robotics/IMG_1878.jpg" alt="Blockchain and system architecture" loading="lazy" decoding="async">
+          </div>
+          <div class="case-body">
+            <div class="meta-row">
+              <span class="page-tag">Blockchain reliability</span>
+              <span class="page-date">Fintech</span>
+            </div>
+            <h2>Fixing a critical blockchain transaction failure in a live fintech environment</h2>
+            <p>When the system began rejecting transactions unpredictably, the real issue was not the provider — it was a concurrency bug in transaction sequencing. I designed and implemented a centralized nonce strategy that brought order back to the system.</p>
+            <a href="/case-study-detail.html" class="text-link">Read full case study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="case-mini">
+          <div class="meta-row">
+            <span class="page-tag">AI systems</span>
+            <span class="page-date">Product</span>
+          </div>
+          <h3>Designing dependable AI workflows around real human usage</h3>
+          <p>AI features fail in the real world when they ignore the operating context. I focus on product boundaries, trust signals, and failure recovery before adding complexity.</p>
+        </article>
+
+        <article class="case-mini">
+          <div class="meta-row">
+            <span class="page-tag">Infrastructure</span>
+            <span class="page-date">Platform</span>
+          </div>
+          <h3>Scaling APIs with stronger state control and clearer service boundaries</h3>
+          <p>Production systems need architecture that can explain itself. I design around sequencing, observability, and clean fault isolation so teams can fix issues without destabilizing the whole platform.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-label="Colophon">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+      <p class="footer-note">© 2026 Janak Singh Raikhola</p>
+    </div>
+  </footer>
+
+  <script src="/js/sectionnav.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

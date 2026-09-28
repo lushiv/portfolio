@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fixing a critical blockchain transaction failure — Janak Singh Raikhola</title>
+  <meta name="description" content="A production case study on blockchain transaction failure caused by nonce desynchronization and resolved through disciplined system design.">
+  <link rel="icon" type="image/svg+xml" href="/img/capricorn.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-name">Janak Raikhola</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/story.html">Story</a></li>
+          <li><a href="/articles.html">Articles</a></li>
+          <li><a href="/case-study.html" aria-current="true">Case study</a></li>
+          <li><a href="/photos.html">Photos</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-kicker">Production case study</p>
+        <h1>Fixing a critical blockchain transaction failure in a live fintech environment</h1>
+        <p class="page-intro">When transaction acceptance began failing unpredictably, the core issue was not the blockchain provider itself — it was a state sequencing problem that could quietly destabilize the full flow.</p>
+      </div>
+    </section>
+
+    <section class="section page-section">
+      <div class="container story-layout">
+        <article class="case-copy prose">
+          <p>The issue surfaced as a sequence of seemingly random transaction failures: same wallet, same account, same flow — but different outcomes depending on timing and concurrency. That pattern usually points to one thing: state desynchronization.</p>
+          <p>In blockchain systems, transaction ordering matters. When multiple operations try to use the same nonce or transaction state at once, the system can drift out of sync and reject the next valid request. In a live production environment, this creates a serious product problem because users are seeing failures even though the wallet and funds are technically valid.</p>
+
+          <h2>What I found</h2>
+          <p>We were treating blockchain access as if it were a normal request/response layer. In practice, it behaves more like a systematic state machine with strict sequencing rules. Once that became clear, the root cause was straightforward: the service layer was not controlling transaction lifecycle with enough integrity.</p>
+          <p>The fix required more than a retry patch. We needed a proper transaction manager with consistent sequencing, a clear source of truth, and a way to prevent overlapping writes from the same account context.</p>
+
+          <h2>The fix</h2>
+          <p>I introduced a centralized strategy that serialized critical transaction actions and tracked the state transitions in a controlled layer. This allowed the system to recover from races and process each transaction in a deterministic order instead of relying on probabilistic timing.</p>
+          <p>In practical terms, the work improved failure predictability, reduced support issues, and restored operational confidence in the live flow. The result was not just technical stability — it was a stronger customer experience because the system behaved consistently under pressure.</p>
+
+          <h2>Why this matters</h2>
+          <p>In complex systems, the hardest bugs are often not “broken features.” They are incorrect assumptions about concurrency, ordering, and state. This case reinforced a broader engineering principle: product reliability is built by making unknowns visible and manageable.</p>
+        </article>
+
+        <aside class="story-aside">
+          <div class="stat-panel">
+            <p class="mini-label">Key lessons</p>
+            <ul>
+              <li><strong>Root cause</strong><span>state sequencing drift</span></li>
+              <li><strong>Fix</strong><span>centralized transaction control</span></li>
+              <li><strong>Outcome</strong><span>stability under concurrency</span></li>
+              <li><strong>Pattern</strong><span>design for failure before scaling</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-label="Colophon">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+      <p class="footer-note">© 2026 Janak Singh Raikhola</p>
+    </div>
+  </footer>
+
+  <script src="/js/sectionnav.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

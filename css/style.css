@@ -94,16 +94,14 @@ a:hover { text-decoration: underline; }
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  overflow: hidden;
-  background: radial-gradient(circle at 50% 40%, #21262d 0%, var(--bg) 70%);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
-}
-
-.brand-mark img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .brand-name { font-size: 0.98rem; }
@@ -535,27 +533,19 @@ a:hover { text-decoration: underline; }
   display: block;
   padding: 2px;
   border-radius: 16px;
-  background: conic-gradient(
-    from 0deg,
-    rgba(255, 255, 255, 0) 0deg,
-    rgba(255, 255, 255, 0) 200deg,
-    rgba(255, 255, 255, 0.9) 285deg,
-    rgba(182, 242, 74, 1) 320deg,
-    rgba(255, 255, 255, 0.95) 340deg,
-    rgba(255, 255, 255, 0.9) 355deg,
-    rgba(255, 255, 255, 0) 360deg
-  );
-  animation: spin 5.5s linear infinite;
+  background: linear-gradient(135deg, rgba(15, 98, 255, 0.92), rgba(128, 201, 255, 0.75));
+  box-shadow: 0 0 0 1px rgba(116, 181, 255, 0.22), 0 18px 36px rgba(31, 113, 255, 0.18);
+  animation: bluePulse 4.8s ease-in-out infinite;
 }
 
-.spotlight:hover .spotlight-frame { animation-duration: 2.4s; }
+.spotlight:hover .spotlight-frame { animation-duration: 2.6s; }
 
 .spotlight-body {
   position: relative;
   display: block;
   padding: 10px;
   border-radius: 14px;
-  background: #161b22;
+  background: #0d1729;
   overflow: hidden;
 }
 
@@ -587,8 +577,9 @@ a:hover { text-decoration: underline; }
   55%, 100% { background-position: -80% 0; }
 }
 
-@keyframes spin {
-  to { filter: hue-rotate(360deg); }
+@keyframes bluePulse {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(116, 181, 255, 0.22), 0 18px 36px rgba(31, 113, 255, 0.18); }
+  50% { box-shadow: 0 0 0 1px rgba(116, 181, 255, 0.4), 0 22px 40px rgba(31, 113, 255, 0.3); }
 }
 
 /* ---------- Sections ---------- */
@@ -1228,6 +1219,10 @@ a:hover { text-decoration: underline; }
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  box-sizing: border-box;
   transition: transform 0.6s ease;
 }
 
@@ -1531,11 +1526,26 @@ a:hover { text-decoration: underline; }
 /* ---------- Stillness / third eye ---------- */
 
 .devotion {
+  position: relative;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(212, 181, 122, 0.12), transparent 18%),
+    radial-gradient(circle at 73% 28%, rgba(136, 146, 255, 0.14), transparent 22%),
+    linear-gradient(135deg, rgba(10, 13, 18, 0.98), rgba(15, 19, 24, 0.96) 46%, rgba(10, 13, 18, 0.99));
   border-bottom: 1px solid var(--border);
   overflow: hidden;
 }
 
+.devotion::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.015) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.015) 100%);
+  pointer-events: none;
+}
+
 .devotion-inner {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: 56px;
@@ -1623,35 +1633,36 @@ a:hover { text-decoration: underline; }
 }
 
 .devotion-copy h2 { margin-bottom: 16px; }
-.devotion-copy > p { color: var(--muted); max-width: 54ch; }
+.devotion-copy > p { color: rgba(230, 237, 243, 0.82); max-width: 54ch; }
 
 .devotion-quote {
   position: relative;
   margin: 26px 0 20px;
   padding: 20px 22px 20px 24px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 2px solid var(--accent);
+  background: rgba(17, 22, 29, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-left: 2px solid rgba(212, 181, 122, 0.9);
   border-radius: var(--radius);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 16px 30px rgba(0,0,0,0.18);
 }
 
-.devotion-quote p:last-child { color: var(--muted); font-size: 0.95rem; }
+.devotion-quote p:last-child { color: rgba(220, 226, 232, 0.78); font-size: 0.95rem; }
 
 .devotion-mantra {
   position: absolute;
   top: 14px;
   right: 18px;
-  color: var(--accent);
+  color: #d4b57a;
   font-size: 1.5rem;
   line-height: 1;
-  opacity: 0.5;
+  opacity: 0.72;
 }
 
 .devotion-note {
   display: flex;
   align-items: center;
   gap: 9px;
-  color: #6e7681;
+  color: rgba(214, 220, 228, 0.7);
   font-family: var(--mono);
   font-size: 0.74rem;
 }
