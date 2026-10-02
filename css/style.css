@@ -1514,13 +1514,13 @@ a:hover { text-decoration: underline; }
 }
 
 @keyframes orbit-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from { transform: rotate(-45deg); }
+  to { transform: rotate(315deg); }
 }
 
 @keyframes orbit-counter {
-  from { transform: translate(var(--orbit-r), 0) rotate(0deg); }
-  to { transform: translate(var(--orbit-r), 0) rotate(-360deg); }
+  from { transform: translate(var(--orbit-r), 0) rotate(45deg); }
+  to { transform: translate(var(--orbit-r), 0) rotate(-315deg); }
 }
 
 /* ---------- Stillness / third eye ---------- */

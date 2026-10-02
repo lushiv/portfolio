@@ -12,13 +12,13 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Original camera captures — sources for /img, not shipped
+# Original camera captures used to prepare /img, not shipped
 real_img/
 real_code/
 .kilo
 
-# Source screenshots — originals, not shipped
+# Original source screenshots, not shipped
 screenshots/
 
-# Purchased/downloaded vector source files (.ai, .eps, .pdf) — not for the repo
+# Purchased/downloaded vector source files (.ai, .eps, .pdf) are not for the repo
 vectorstock_38105425/

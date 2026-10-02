@@ -166,7 +166,7 @@
       } else {
         var img = document.createElement('img');
         img.src = src;
-        img.alt = 'Field lab capture, full size';
+        img.alt = item.querySelector('img').alt + ', full size';
         stage.appendChild(img);
       }
 
@@ -224,17 +224,6 @@
         step(1);
       }
     });
-  }
-
-  function initCodeSection() {
-    var grid = document.querySelector('[data-code-grid]');
-    var empty = document.querySelector('[data-code-empty]');
-    if (!grid || !empty) {
-      return;
-    }
-    if (grid.querySelector('[data-lab]')) {
-      empty.hidden = true;
-    }
   }
 
   function initGalaxy() {
@@ -434,6 +423,5 @@
   initNavToggle();
   initScrollSpy();
   initLab();
-  initCodeSection();
   initReveal();
 })();

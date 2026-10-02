@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fixing a critical blockchain transaction failure — Janak Singh Raikhola</title>
+  <title>Fixing a critical blockchain transaction failure | Janak Singh Raikhola</title>
   <meta name="description" content="A production case study on blockchain transaction failure caused by nonce desynchronization and resolved through disciplined system design.">
-  <link rel="icon" type="image/svg+xml" href="/img/capricorn.svg">
+  <link rel="icon" type="image/svg+xml" href="/img/jr-favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -37,7 +37,8 @@
           <li><a href="/photos.html">Photos</a></li>
           <li><a href="/research.html">Research</a></li>
           <li><a href="/resume.html">Resume</a></li>
-          <li><a class="nav-cta" href="mailto:thejanak.ai@gmail.com">Let's Work Together</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li><a class="nav-cta" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">Let's Work Together</a></li>
         </ul>
       </nav>
     </div>
@@ -48,14 +49,14 @@
       <div class="container">
         <p class="page-kicker">Production case study</p>
         <h1>Fixing a critical blockchain transaction failure in a live fintech environment</h1>
-        <p class="page-intro">When transaction acceptance began failing unpredictably, the core issue was not the blockchain provider itself — it was a state sequencing problem that could quietly destabilize the full flow.</p>
+        <p class="page-intro">When transaction acceptance began failing unpredictably, the core issue was not the blockchain provider itself; it was a state sequencing problem that could quietly destabilize the full flow.</p>
       </div>
     </section>
 
     <section class="section page-section">
       <div class="container story-layout">
         <article class="case-copy prose">
-          <p>The issue surfaced as a sequence of seemingly random transaction failures: same wallet, same account, same flow — but different outcomes depending on timing and concurrency. That pattern usually points to one thing: state desynchronization.</p>
+          <p>The issue surfaced as a sequence of seemingly random transaction failures: the same wallet, account, and flow, but different outcomes depending on timing and concurrency. That pattern usually points to one thing: state desynchronization.</p>
           <p>In blockchain systems, transaction ordering matters. When multiple operations try to use the same nonce or transaction state at once, the system can drift out of sync and reject the next valid request. In a live production environment, this creates a serious product problem because users are seeing failures even though the wallet and funds are technically valid.</p>
 
           <h2>What I found</h2>
@@ -64,7 +65,7 @@
 
           <h2>The fix</h2>
           <p>I introduced a centralized strategy that serialized critical transaction actions and tracked the state transitions in a controlled layer. This allowed the system to recover from races and process each transaction in a deterministic order instead of relying on probabilistic timing.</p>
-          <p>In practical terms, the work improved failure predictability, reduced support issues, and restored operational confidence in the live flow. The result was not just technical stability — it was a stronger customer experience because the system behaved consistently under pressure.</p>
+          <p>In practical terms, the work improved failure predictability, reduced support issues, and restored operational confidence in the live flow. The result was not just technical stability; it was a stronger customer experience because the system behaved consistently under pressure.</p>
 
           <h2>Why this matters</h2>
           <p>In complex systems, the hardest bugs are often not “broken features.” They are incorrect assumptions about concurrency, ordering, and state. This case reinforced a broader engineering principle: product reliability is built by making unknowns visible and manageable.</p>
