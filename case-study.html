@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Case Study: Blockchain Transaction Failure</title>
-  <meta name="description" content="A production case study on blockchain transaction failure caused by nonce desynchronization and resolved through a centralized Redis-backed transaction manager.">
+  <title>Case Studies &amp; Systems Insights | Janak Singh Raikhola</title>
+  <meta name="description" content="Case studies by Janak Singh Raikhola on production blockchain reliability, AI workflows, and distributed API architecture.">
   <link rel="icon" type="image/svg+xml" href="/img/jr-favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,6 @@
           <li><a href="/photos.html">Photos</a></li>
           <li><a href="/research.html">Research</a></li>
           <li><a href="/resume.html">Resume</a></li>
-          <li><a href="/index.html#contact">Contact</a></li>
           <li><a class="nav-cta" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">Let's Work Together</a></li>
         </ul>
       </nav>
@@ -46,20 +45,40 @@
 
   <main id="main">
     <section class="page-hero case-hero">
-      <div class="container">
-        <p class="page-kicker">Production case studies</p>
-        <h1>How I work through technical complexity, product pressure, and live system failures.</h1>
-        <p class="page-intro">From blockchain transaction reliability to distributed API thinking, my case studies focus on the decisions that keep systems running when the business depends on them.</p>
+      <div class="container case-directory-head">
+        <div>
+          <p class="page-kicker">Engineering / Case studies</p>
+          <h1>Case Studies <em>&amp; Insights</em></h1>
+        </div>
+        <div class="case-directory-copy">
+          <p>Real production challenges, architecture decisions, and the engineering work behind reliable systems.</p>
+          <p class="article-count">2 detailed case studies / 2 engineering focus areas</p>
+        </div>
       </div>
     </section>
 
-    <section class="section page-section">
+    <section class="section page-section case-directory-section">
       <div class="container case-study-list">
-        <article class="case-feature">
-          <div class="case-thumb">
-            <img src="/img/iot-robotics/IMG_1878.jpg" alt="Blockchain and system architecture" loading="lazy" decoding="async">
+        <article class="case-card">
+          <a class="case-card-image" href="/case-study-brainwave.html" aria-label="Read the brainwave data acquisition and neuro-fieldwork case study">
+            <img src="/egg/IMG_20190924_104524.jpg" alt="Meditation participant wearing an EEG headset during 2019 fieldwork" loading="lazy" decoding="async">
+          </a>
+          <div class="case-card-body">
+            <div class="meta-row">
+              <span class="page-tag">Neuro-fieldwork / EEG</span>
+              <span class="page-date"><a href="https://ibriz.ai/" target="_blank" rel="noopener noreferrer">Ibriz AI / 2019</a></span>
+            </div>
+            <h2>Brainwave data acquisition and neuro-fieldwork with meditating monks</h2>
+            <p>A 2019 internship project documenting EEG setup, meditation-session acquisition, signal checks, and structured data handoff for further analysis.</p>
+            <a href="/case-study-brainwave.html" class="text-link">Read full case study <span aria-hidden="true">→</span></a>
           </div>
-          <div class="case-body">
+        </article>
+
+        <article class="case-card">
+          <a class="case-card-image" href="/case-study-detail.html" aria-label="Read the blockchain transaction reliability case study">
+            <img src="/blockchain-class-events/IMG_20190629_102133.jpg" alt="Janak presenting token flows and MetaMask concepts at a blockchain workshop" loading="lazy" decoding="async">
+          </a>
+          <div class="case-card-body">
             <div class="meta-row">
               <span class="page-tag">Blockchain reliability</span>
               <span class="page-date">Fintech</span>
@@ -70,22 +89,34 @@
           </div>
         </article>
 
-        <article class="case-mini">
-          <div class="meta-row">
-            <span class="page-tag">AI systems</span>
-            <span class="page-date">Product</span>
+        <article class="case-card">
+          <div class="case-card-image">
+            <img src="/setup_timeline/coding-timelijne/IMG_20201020_233728.jpg" alt="Janak's development workspace with code open on a laptop" loading="lazy" decoding="async">
           </div>
-          <h3>Designing dependable AI workflows around real human usage</h3>
-          <p>AI features fail in the real world when they ignore the operating context. I focus on product boundaries, trust signals, and failure recovery before adding complexity.</p>
+          <div class="case-card-body">
+            <div class="meta-row">
+              <span class="page-tag">AI systems</span>
+              <span class="page-date">Product</span>
+            </div>
+            <h2>Designing dependable AI workflows around real human usage</h2>
+            <p>AI features fail in the real world when they ignore the operating context. I focus on product boundaries, trust signals, and failure recovery before adding complexity.</p>
+            <a href="/research.html" class="text-link">Explore related research <span aria-hidden="true">→</span></a>
+          </div>
         </article>
 
-        <article class="case-mini">
-          <div class="meta-row">
-            <span class="page-tag">Infrastructure</span>
-            <span class="page-date">Platform</span>
+        <article class="case-card">
+          <div class="case-card-image">
+            <img src="/setup_timeline/coding-timelijne/IMG_20201020_233436.jpg" alt="Software development workspace used for backend engineering" loading="lazy" decoding="async">
           </div>
-          <h3>Scaling APIs with stronger state control and clearer service boundaries</h3>
-          <p>Production systems need architecture that can explain itself. I design around sequencing, observability, and clean fault isolation so teams can fix issues without destabilizing the whole platform.</p>
+          <div class="case-card-body">
+            <div class="meta-row">
+              <span class="page-tag">Infrastructure</span>
+              <span class="page-date">Platform</span>
+            </div>
+            <h2>Scaling APIs with stronger state control and clearer service boundaries</h2>
+            <p>Production systems need architecture that can explain itself. I design around sequencing, observability, and clean fault isolation so teams can fix issues without destabilizing the whole platform.</p>
+            <a href="https://github.com/lushiv/MariaGin" class="text-link" target="_blank" rel="noopener noreferrer">Explore API project <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
       </div>
     </section>

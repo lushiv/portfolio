@@ -37,7 +37,6 @@
           <li><a href="/photos.html">Photos</a></li>
           <li><a href="/research.html">Research</a></li>
           <li><a href="/resume.html">Resume</a></li>
-          <li><a href="/index.html#contact">Contact</a></li>
           <li><a class="nav-cta" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">Let's Work Together</a></li>
         </ul>
       </nav>
@@ -45,43 +44,70 @@
   </header>
 
   <main id="main" class="page-main">
-    <section class="page-hero">
+    <section class="page-hero article-hero">
       <div class="container">
-        <p class="page-kicker">Robotics</p>
-        <h1>From sensors to movement: the real engineering challenge in robotics</h1>
-        <p class="page-intro">Robotics moves beyond theory when the system must react reliably in messy conditions. Real-world autonomy depends as much on software discipline as on hardware ambition.</p>
+        <a class="article-backlink" href="/articles.html">&larr; All articles</a>
+        <div class="article-meta-row">
+          <span>Robotics</span>
+          <span>2026</span>
+          <span>By Janak Singh Raikhola</span>
+        </div>
+        <h1>From sensors to movement: <em>the real engineering challenge in robotics</em></h1>
+        <p class="page-intro article-deck">Robotics moves beyond theory when the system must react reliably in messy conditions. Real-world autonomy depends as much on software discipline as on hardware ambition.</p>
       </div>
     </section>
 
-    <section class="section page-section">
-      <div class="container story-layout">
-        <article class="case-copy prose">
+    <section class="section page-section article-section">
+      <div class="container">
+        <div class="article-detail-layout">
+          <aside class="article-sidebar">
+            <p class="article-reading-time"><span>Reading time</span><strong>3 min read</strong></p>
+            <nav class="article-toc" aria-label="In this article">
+              <p class="mini-label">In this article</p>
+              <ol>
+                <li><a href="#movement-is-a-systems-problem">Movement is a systems problem</a></li>
+                <li><a href="#autonomy-needs-recovery">Autonomy and recovery</a></li>
+                <li><a href="#build-for-the-messy-middle">Build for the messy middle</a></li>
+              </ol>
+            </nav>
+          </aside>
+          <div class="article-main">
+            <figure class="article-cover">
+              <img src="/img/iot-robotics/IMG_1993.jpg" alt="Robotics hardware and sensor systems from the research lab" loading="eager" decoding="async">
+            </figure>
+            <article class="case-copy prose article-body">
           <p>There is a difference between a robot that works in a lab and a robot that can operate under real-world uncertainty. In the lab, the environment is controlled. In the world, it is not.</p>
           <p>Many robotics projects stall not because the hardware is weak, but because the software stack cannot reconcile sensor noise, timing drift, motion constraints, and failure recovery. Once a robot can physically move, the engineering challenge shifts from “can it work?” to “can it keep working under changing conditions?”</p>
 
-          <h2>Movement is a systems problem</h2>
+          <h2 id="movement-is-a-systems-problem">Movement is a systems problem</h2>
           <p>Walking, grasping, or navigating are not isolated tasks. They are orchestrated loops of perception, control, planning, and feedback. A system that reacts too slowly to sensor input will either stumble or overcorrect. A system that trusts raw input too much will misinterpret noise as a signal.</p>
           <p>That is why robotics engineering is deeply rooted in timing, state estimation, and disciplined control loops. The intelligence is not in the movement alone; it is in how the system reads, interprets, and responds to the world.</p>
 
-          <h2>Real autonomy needs recovery logic</h2>
+          <h2 id="autonomy-needs-recovery">Real autonomy needs recovery logic</h2>
           <p>Robots fail in ways that reveal the gap between conceptual design and operational reality. A wheel slips. A camera drops frames. A motor overheats. A gripper misreads the target. The real test is not whether a robot can start correctly, but whether it can fail gracefully and recover without escalating error.</p>
           <p>That is where disciplined software architecture matters. You need robust state transitions, fallback behaviors, and enough observability to understand what went wrong after the fact.</p>
 
-          <h2>Build for the messy middle</h2>
+          <h2 id="build-for-the-messy-middle">Build for the messy middle</h2>
           <p>Most technical ambition stops at the prototype. The challenge is to move from “interesting” to dependable. That means building systems that can handle partial data, noisy actuation, and real home/industrial conditions without collapsing.</p>
-        </article>
-
-        <aside class="story-aside">
-          <div class="stat-panel">
-            <p class="mini-label">Robotics truths</p>
-            <ul>
-              <li><strong>Perception</strong><span>is uncertain in the real world</span></li>
-              <li><strong>Timing</strong><span>matters more than people expect</span></li>
-              <li><strong>Recovery</strong><span>is part of the design</span></li>
-              <li><strong>Trust</strong><span>comes from repeatability</span></li>
-            </ul>
+            </article>
+            <div class="article-byline">
+              <span>Robotics / 2026 / Janak Singh Raikhola</span>
+              <a href="/articles.html">&larr; All articles</a>
+            </div>
           </div>
-        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section article-keep-reading">
+      <div class="container">
+        <p class="mini-label">Keep reading</p>
+        <h2>More from the field</h2>
+        <div class="article-related-grid">
+          <a class="article-related-link" href="/article-backend-systems.html"><span>Backend systems / 2026</span><strong>Designing for reliability in backend systems</strong><span aria-hidden="true">&rarr;</span></a>
+          <a class="article-related-link" href="/article-iot.html"><span>IoT / 2026</span><strong>Why IoT should be designed around trust, not just sensors</strong><span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <a class="article-backlink" href="/articles.html">Browse all articles &rarr;</a>
       </div>
     </section>
   </main>

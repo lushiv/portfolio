@@ -37,7 +37,6 @@
           <li><a href="/photos.html">Photos</a></li>
           <li><a href="/research.html">Research</a></li>
           <li><a href="/resume.html">Resume</a></li>
-          <li><a href="/index.html#contact">Contact</a></li>
           <li><a class="nav-cta" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">Let's Work Together</a></li>
         </ul>
       </nav>
@@ -45,44 +44,71 @@
   </header>
 
   <main id="main" class="page-main">
-    <section class="page-hero">
+    <section class="page-hero article-hero">
       <div class="container">
-        <p class="page-kicker">Backend systems</p>
-        <h1>Designing for reliability in backend systems</h1>
-        <p class="page-intro">Reliable products are not built by shipping fast alone. They are built by planning for failure, controlling concurrency, and treating state as a product decision rather than an implementation detail.</p>
+        <a class="article-backlink" href="/articles.html">&larr; All articles</a>
+        <div class="article-meta-row">
+          <span>Backend systems</span>
+          <span>2026</span>
+          <span>By Janak Singh Raikhola</span>
+        </div>
+        <h1>Designing for reliability <em>in backend systems</em></h1>
+        <p class="page-intro article-deck">Reliable products are not built by shipping fast alone. They are built by planning for failure, controlling concurrency, and treating state as a product decision rather than an implementation detail.</p>
       </div>
     </section>
 
-    <section class="section page-section">
-      <div class="container story-layout">
-        <article class="case-copy prose">
+    <section class="section page-section article-section">
+      <div class="container">
+        <div class="article-detail-layout">
+          <aside class="article-sidebar">
+            <p class="article-reading-time"><span>Reading time</span><strong>3 min read</strong></p>
+            <nav class="article-toc" aria-label="In this article">
+              <p class="mini-label">In this article</p>
+              <ol>
+                <li><a href="#design-around-failure">Design around failure</a></li>
+                <li><a href="#state-is-a-product-decision">State as a product decision</a></li>
+                <li><a href="#what-good-systems-do">What good systems do</a></li>
+              </ol>
+            </nav>
+          </aside>
+          <div class="article-main">
+            <figure class="article-cover">
+              <img src="/img/iot-robotics/IMG_1876.jpg" alt="Robotics and edge systems on the research bench" loading="eager" decoding="async">
+            </figure>
+            <article class="case-copy prose article-body">
           <p>When teams talk about product reliability, they often focus on uptime and bug counts. Those are important, but the real work begins earlier: deciding how the system behaves under stress, partial failure, or unexpected input.</p>
           <p>Backend systems rarely fail because of a single bad line of code. They fail when multiple moving parts assume too much confidence about sequencing, state, and time. A queue may retry too fast. A database may accept conflicting writes. A worker may process the same event twice because the deduplication boundary is unclear.</p>
           <p>The strongest systems reduce uncertainty. They define state transitions clearly, identify the exact source of truth, and create a path to recover when something breaks mid-flight. That means paying attention to idempotency, retry policy, ordering guarantees, timeout behavior, and observability from the beginning.</p>
 
-          <h2>Design around failure, not just success</h2>
+          <h2 id="design-around-failure">Design around failure, not just success</h2>
           <p>Most product teams design a happy path and then assume the system can “handle” edge cases later. This is why operational debt accumulates so quickly. Production architecture should be designed around the failure curve: what happens when a provider is slow, a dependency is down, or a client retries the same request after a timeout?</p>
           <p>We need systems that degrade gracefully, not just systems that recover magically. That is where disciplined architecture begins to matter. When you make failures visible and understandable, your team can react without panic.</p>
 
-          <h2>State is a product decision</h2>
+          <h2 id="state-is-a-product-decision">State is a product decision</h2>
           <p>State management is not only an engineering concern. It is also a customer experience issue. A transaction that appears “complete” to one user and “pending” to another creates confusion, trust issues, and support load.</p>
           <p>That is why backend reliability work often involves clarifying ownership. Who can mutate this record? What is the canonical source of truth? What happens when two services race to complete the same job?</p>
 
-          <h2>What good systems do</h2>
+          <h2 id="what-good-systems-do">What good systems do</h2>
           <p>Good backend design creates a predictable contract between services, between teams, and between business logic and runtime reality. It makes recovery easier, tracing easier, and communication easier. It lets humans make better product decisions because they can trust the system beneath the product surface.</p>
-        </article>
-
-        <aside class="story-aside">
-          <div class="stat-panel">
-            <p class="mini-label">Takeaways</p>
-            <ul>
-              <li><strong>Plan</strong><span>for failure on day one</span></li>
-              <li><strong>Control</strong><span>state and sequencing intentionally</span></li>
-              <li><strong>Observe</strong><span>all critical flows in production</span></li>
-              <li><strong>Design</strong><span>for trust, not just speed</span></li>
-            </ul>
+            </article>
+            <div class="article-byline">
+              <span>Backend systems / 2026 / Janak Singh Raikhola</span>
+              <a href="/articles.html">&larr; All articles</a>
+            </div>
           </div>
-        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section article-keep-reading">
+      <div class="container">
+        <p class="mini-label">Keep reading</p>
+        <h2>More from the field</h2>
+        <div class="article-related-grid">
+          <a class="article-related-link" href="/article-iot.html"><span>IoT / 2026</span><strong>Why IoT should be designed around trust, not just sensors</strong><span aria-hidden="true">&rarr;</span></a>
+          <a class="article-related-link" href="/article-robotics.html"><span>Robotics / 2026</span><strong>From sensors to movement: the real engineering challenge in robotics</strong><span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <a class="article-backlink" href="/articles.html">Browse all articles &rarr;</a>
       </div>
     </section>
   </main>

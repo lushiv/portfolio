@@ -37,7 +37,6 @@
           <li><a href="/photos.html">Photos</a></li>
           <li><a href="/research.html">Research</a></li>
           <li><a href="/resume.html">Resume</a></li>
-          <li><a href="/index.html#contact">Contact</a></li>
           <li><a class="nav-cta" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">Let's Work Together</a></li>
         </ul>
       </nav>
@@ -45,43 +44,70 @@
   </header>
 
   <main id="main" class="page-main">
-    <section class="page-hero">
+    <section class="page-hero article-hero">
       <div class="container">
-        <p class="page-kicker">IoT</p>
-        <h1>Why IoT should be designed around trust, not just sensors</h1>
-        <p class="page-intro">When edge devices connect to the cloud, the real challenge is not collecting more data; it is keeping signals honest, secure, and understandable.</p>
+        <a class="article-backlink" href="/articles.html">&larr; All articles</a>
+        <div class="article-meta-row">
+          <span>IoT</span>
+          <span>2026</span>
+          <span>By Janak Singh Raikhola</span>
+        </div>
+        <h1>Why IoT should be designed around <em>trust, not just sensors</em></h1>
+        <p class="page-intro article-deck">When edge devices connect to the cloud, the real challenge is not collecting more data; it is keeping signals honest, secure, and understandable.</p>
       </div>
     </section>
 
-    <section class="section page-section">
-      <div class="container story-layout">
-        <article class="case-copy prose">
+    <section class="section page-section article-section">
+      <div class="container">
+        <div class="article-detail-layout">
+          <aside class="article-sidebar">
+            <p class="article-reading-time"><span>Reading time</span><strong>3 min read</strong></p>
+            <nav class="article-toc" aria-label="In this article">
+              <p class="mini-label">In this article</p>
+              <ol>
+                <li><a href="#more-data-is-not-better-intelligence">More data, better intelligence</a></li>
+                <li><a href="#security-and-maintenance">Security and maintenance</a></li>
+                <li><a href="#product-interface-to-reality">The product interface</a></li>
+              </ol>
+            </nav>
+          </aside>
+          <div class="article-main">
+            <figure class="article-cover">
+              <img src="/img/iot-robotics/IMG_1986.jpg" alt="IoT edge research hardware on the workbench" loading="eager" decoding="async">
+            </figure>
+            <article class="case-copy prose article-body">
           <p>IoT products often begin with hardware excitement: sensors, connectivity, dashboards, and remote monitoring. But the real complexity appears when those devices start making decisions or sending data that people rely on for operational safety, energy efficiency, or production health.</p>
           <p>At that point, we are no longer building gadgets. We are building trust systems. The value of the product is not simply in technical capability; it is in whether the system consistently tells the truth.</p>
 
-          <h2>More data is not the same as better intelligence</h2>
+          <h2 id="more-data-is-not-better-intelligence">More data is not the same as better intelligence</h2>
           <p>Many IoT projects fail because they optimize for volume rather than clarity. If a sensor reports noisy, delayed, or contradictory values, the product becomes harder to trust. A side effect of poor edge design is not just bad analytics, but poor decisions downstream.</p>
           <p>Good IoT products decide how to validate signals, what to do during connectivity loss, and how to communicate uncertainty to users. The system should know when a reading may be stale or when a device is failing silently.</p>
 
-          <h2>Security and maintenance are design features</h2>
+          <h2 id="security-and-maintenance">Security and maintenance are design features</h2>
           <p>Edge devices live in messy environments. They face power instability, network variability, physical tampering, and inconsistent updates. The product must assume the real world is unpredictable.</p>
           <p>That means secure provisioning, safe fallback modes, clear device states, and simple maintenance paths. Trust is not earned by a beautiful dashboard alone; it is built through operational reliability.</p>
 
-          <h2>The product is the interface to reality</h2>
+          <h2 id="product-interface-to-reality">The product is the interface to reality</h2>
           <p>For users, the most important part of an IoT experience is not the sensor itself; it is the confidence they have in what the system tells them. A trustworthy IoT product communicates uncertainty honestly, offers actionable insight, and fails in ways humans can understand.</p>
-        </article>
-
-        <aside class="story-aside">
-          <div class="stat-panel">
-            <p class="mini-label">Key principles</p>
-            <ul>
-              <li><strong>Verify</strong><span>signal quality before acting</span></li>
-              <li><strong>Graceful</strong><span>fallback during outages</span></li>
-              <li><strong>Secure</strong><span>device lifecycle and updates</span></li>
-              <li><strong>Clear</strong><span>communication of uncertainty</span></li>
-            </ul>
+            </article>
+            <div class="article-byline">
+              <span>IoT / 2026 / Janak Singh Raikhola</span>
+              <a href="/articles.html">&larr; All articles</a>
+            </div>
           </div>
-        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section article-keep-reading">
+      <div class="container">
+        <p class="mini-label">Keep reading</p>
+        <h2>More from the field</h2>
+        <div class="article-related-grid">
+          <a class="article-related-link" href="/article-backend-systems.html"><span>Backend systems / 2026</span><strong>Designing for reliability in backend systems</strong><span aria-hidden="true">&rarr;</span></a>
+          <a class="article-related-link" href="/article-robotics.html"><span>Robotics / 2026</span><strong>From sensors to movement: the real engineering challenge in robotics</strong><span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <a class="article-backlink" href="/articles.html">Browse all articles &rarr;</a>
       </div>
     </section>
   </main>

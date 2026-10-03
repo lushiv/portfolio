@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brainwave Data Acquisition and Neuro-Fieldwork | Janak Singh Raikhola</title>
+  <meta name="description" content="A 2019 Ibriz AI internship case study on EEG data acquisition during meditation fieldwork with monks, using an Emotiv EPOC+ headset.">
+  <link rel="icon" type="image/svg+xml" href="/img/jr-favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="galaxy" id="galaxy" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <span class="brand-mark" aria-hidden="true">JR</span>
+        <span class="brand-name">Janak Raikhola</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/story.html">Story</a></li>
+          <li><a href="/articles.html">Articles</a></li>
+          <li><a href="/case-study.html" aria-current="true">Case study</a></li>
+          <li><a href="/photos.html">Photos</a></li>
+          <li><a href="/research.html">Research</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a class="nav-cta" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">Let's Work Together</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main brainwave-case-study">
+    <section class="page-hero article-hero brainwave-hero">
+      <div class="container">
+        <a class="article-backlink" href="/case-study.html">&larr; All case studies</a>
+        <div class="article-meta-row">
+          <span>Neuro-fieldwork</span>
+          <time datetime="2019">2019</time>
+          <span>Intern Researcher &amp; Analyst</span>
+          <a href="https://ibriz.ai/" target="_blank" rel="noopener noreferrer">Ibriz AI ↗</a>
+        </div>
+        <h1>Brainwave data acquisition <em>&amp; neuro-fieldwork</em> with meditating monks</h1>
+        <p class="page-intro article-deck">A field acquisition project combining EEG hardware, meditation sessions, signal-quality checks, and structured data handoff for downstream analysis.</p>
+      </div>
+    </section>
+
+    <section class="section page-section article-section brainwave-section">
+      <div class="container article-detail-layout">
+        <aside class="article-sidebar">
+          <p class="mini-label">Project profile</p>
+          <dl class="brainwave-project-facts">
+            <div><dt>Organization</dt><dd><a href="https://ibriz.ai/" target="_blank" rel="noopener noreferrer">Ibriz AI ↗</a></dd></div>
+            <div><dt>Role</dt><dd>Intern Researcher &amp; Analyst</dd></div>
+            <div><dt>Year</dt><dd>2019</dd></div>
+            <div><dt>Domain</dt><dd>EEG / BCI / Neuro-fieldwork</dd></div>
+            <div><dt>Device</dt><dd>Emotiv EPOC+ 14-channel headset</dd></div>
+            <div><dt>Audience</dt><dd>Data scientists and AI researchers</dd></div>
+            <div><dt>Data handoff</dt><dd>Research collaborators in Silicon Valley</dd></div>
+          </dl>
+          <nav class="article-toc" aria-label="In this case study">
+            <p class="mini-label">In this case study</p>
+            <ol>
+              <li><a href="#project-summary">Executive summary</a></li>
+              <li><a href="#key-terms">Key terms</a></li>
+              <li><a href="#research-objective">Problem and objective</a></li>
+              <li><a href="#equipment-and-software">Equipment and software</a></li>
+              <li><a href="#fieldwork-workflow">Fieldwork workflow</a></li>
+              <li><a href="#frequency-bands">Frequency bands</a></li>
+              <li><a href="#data-handoff">Data handoff and next uses</a></li>
+              <li><a href="#challenges-and-learning">Challenges and learnings</a></li>
+              <li><a href="#conclusion">Conclusion</a></li>
+            </ol>
+          </nav>
+        </aside>
+
+        <div class="article-main">
+          <figure class="article-cover brainwave-cover">
+            <img src="/egg/IMG_20190924_110343.jpg" alt="A meditation participant wearing the Emotiv EEG headset during the 2019 field session" loading="eager" decoding="async">
+            <figcaption>Original camera photo from the September 2019 EEG field session</figcaption>
+          </figure>
+
+          <article class="case-copy prose article-body brainwave-body">
+            <h2 id="project-summary">Executive summary</h2>
+            <p>During my 2019 internship at <a href="https://ibriz.ai/" target="_blank" rel="noopener noreferrer">Ibriz AI</a>, I worked as an Intern Researcher &amp; Analyst on a brainwave data-acquisition project. The fieldwork involved daily visits with meditating monks, fitting a wireless EEG headset, monitoring signal quality, recording sessions, and preparing raw datasets for data scientists in Silicon Valley.</p>
+            <p>The goal described in the project brief was to create structured EEG data that could support later analysis of brain activity during meditation. My contribution centered on the field collection workflow and the quality and organization of its data, not on claiming a completed predictive model or clinical finding.</p>
+
+            <h2 id="key-terms">Key terms</h2>
+            <dl class="brainwave-glossary">
+              <div><dt>EEG</dt><dd>Electroencephalography, a non-invasive recording of electrical activity detected by sensors placed on the scalp.</dd></div>
+              <div><dt>Bio-signal</dt><dd>An electrical signal produced by a living body, including brain activity, heartbeats, and muscle movement.</dd></div>
+              <div><dt>Electrode</dt><dd>A sensor contact on the headset that picks up very small electrical signals from the scalp.</dd></div>
+              <div><dt>Impedance</dt><dd>The electrical resistance at the electrode and skin contact. Lower impedance generally supports a clearer recording.</dd></div>
+              <div><dt>Raw data</dt><dd>Sensor values recorded before downstream filtering, feature extraction, or modeling.</dd></div>
+              <div><dt>BCI</dt><dd>A brain-computer interface, a system for acquiring and interpreting signals associated with brain activity.</dd></div>
+            </dl>
+
+            <h2 id="research-objective">The challenge and research objective</h2>
+            <p>The brief frames the challenge as observing meditation outside a tightly controlled laboratory, where sessions may not reflect experienced monks' usual practice. Field visits also introduce electrical noise, movement, and practical constraints around fitting and comfort. The project objective was to:</p>
+            <ol class="brainwave-objectives">
+              <li>Collect EEG recordings during meditation in the participants' field setting.</li>
+              <li>Check signal quality and maintain a repeatable recording process.</li>
+              <li>Organize session context and prepare standardized data for further analysis.</li>
+            </ol>
+
+            <h2 id="equipment-and-software">Equipment and software</h2>
+            <ul class="brainwave-spec-list">
+              <li><strong>Headset:</strong> Emotiv EPOC+ 14-channel wireless EEG device.</li>
+              <li><strong>Sensors:</strong> 14 saline-soaked felt-pad electrodes plus two reference sensors for scalp coverage.</li>
+              <li><strong>Connectivity:</strong> Bluetooth 2.4 GHz or the proprietary USB dongle for real-time streaming.</li>
+              <li><strong>Software:</strong> Emotiv Xavier and EmotivPRO desktop tools for monitoring and raw data logging.</li>
+              <li><strong>Formats:</strong> The brief identifies CSV and EDF for raw recordings, with CSV and JSON described for structured session metadata.</li>
+            </ul>
+
+            <h2 id="fieldwork-workflow">Fieldwork workflow</h2>
+            <p>The daily process combined device preparation, participant comfort, calibration, continuous recording, and careful data organization:</p>
+            <ol class="brainwave-steps">
+              <li><strong>Hydrate the headset pads:</strong> Prepare saline solution and moisten the felt pads to establish electrical contact between each electrode and the scalp.</li>
+              <li><strong>Fit and calibrate:</strong> Position the headset using the international 10-20 placement approach, then adjust the sensor arms for stable contact without unnecessary pressure.</li>
+              <li><strong>Check impedance:</strong> Confirm the software shows green impedance indicators across all 14 electrode nodes before recording.</li>
+              <li><strong>Record a baseline:</strong> Capture eyes-open and eyes-closed readings for roughly two to three minutes.</li>
+              <li><strong>Record the meditation session:</strong> Stream the EEG and log timestamps when a change in meditation stage was observed or reported.</li>
+              <li><strong>Review signal artifacts:</strong> Watch for environmental interference and noise associated with muscle movement, jaw clenching, or eye blinks.</li>
+              <li><strong>Prepare the handoff:</strong> Organize session metadata such as age, years of meditation practice, session length, and environment, then export files for downstream analysis.</li>
+            </ol>
+
+            <h2 id="frequency-bands">Frequency bands in the project brief</h2>
+            <p>The source brief describes five EEG frequency bands and their common interpretive context. These associations are background framing, not results validated by this project.</p>
+            <div class="brainwave-table-wrap" role="region" aria-label="EEG frequency bands and interpretive context" tabindex="0">
+              <table class="brainwave-frequency-table">
+                <thead><tr><th scope="col">Band</th><th scope="col">Range</th><th scope="col">Context described in the brief</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Delta</th><td>0.5 to 4 Hz</td><td>The brief associates this band with deep sleep and restorative states, and describes it as elevated in deeper states.</td></tr>
+                  <tr><th scope="row">Theta</th><td>4 to 8 Hz</td><td>The brief discusses this band in relation to deep relaxation and meditative concentration.</td></tr>
+                  <tr><th scope="row">Alpha</th><td>8 to 12 Hz</td><td>The brief associates this band with calmness and mental clarity, particularly during early to mid meditation.</td></tr>
+                  <tr><th scope="row">Beta</th><td>12 to 30 Hz</td><td>The brief associates this band with active thought and expects it to decrease as meditation deepens.</td></tr>
+                  <tr><th scope="row">Gamma</th><td>30 to 100+ Hz</td><td>The brief reports higher activity during compassionate focus; no raw analysis or statistical validation is included.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="brainwave-evidence-note">The source brief does not provide raw recordings, sample size, statistical tests, or independent validation alongside these interpretations. They should not be treated as study findings, diagnostic measurements, or medical guidance.</p>
+
+            <h2 id="data-handoff">Data handoff and proposed downstream use</h2>
+            <p>The brief describes organizing session metadata, converting recordings into structured formats, and securely transferring datasets to data-science collaborators in Silicon Valley. It lists several intended directions for later work:</p>
+            <ul class="brainwave-spec-list">
+              <li>Training classifiers to explore whether raw EEG inputs could identify deep meditation states.</li>
+              <li>Developing neurofeedback tools intended to guide non-meditators toward calmer states.</li>
+              <li>Using experienced meditators' recordings as a proposed low-stress, high-focus comparison for studying workplace stress.</li>
+            </ul>
+            <p>These are proposed applications in the project brief. This case study does not claim that a classifier, neurofeedback product, or mental-health measure was completed or validated.</p>
+
+            <h2 id="challenges-and-learning">Challenges and learning</h2>
+            <h3>Challenges faced</h3>
+            <ul class="brainwave-spec-list">
+              <li><strong>Field variability:</strong> Manage electrical interference from power lines, fans, and nearby electronics outside a controlled lab.</li>
+              <li><strong>Sensor drying:</strong> Re-hydrate saline pads during extended sessions while minimizing disruption.</li>
+              <li><strong>Participant comfort:</strong> Keep the headset tolerable during prolonged stillness, including for elderly monks.</li>
+            </ul>
+            <h3>What I learned</h3>
+            <ul class="brainwave-spec-list">
+              <li>Real-time bio-signal monitoring, artifact awareness, and electrode calibration.</li>
+              <li>How consistent field protocols connect local acquisition work to an international data pipeline.</li>
+              <li>Why cognitive and neuroscience interpretations require careful measurement and validation.</li>
+            </ul>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p>The internship placed my work between field research and data science: preparing EEG equipment, supporting meditation-session recording, checking signal quality, and organizing datasets for the next stage of analysis. It was an early lesson in how careful acquisition and clear limits on interpretation matter when human bio-signals meet AI research.</p>
+          </article>
+
+          <section class="brainwave-visuals" aria-labelledby="brainwave-visuals-title">
+            <header>
+              <p class="section-label">Field documentation</p>
+              <h2 id="brainwave-visuals-title">Camera photos and concept illustrations</h2>
+              <p class="brainwave-visuals-note">Camera photos document the session. The two AI-generated images are conceptual illustrations only. Any specifications, labels, or example scores inside them are synthetic, not measured study results.</p>
+            </header>
+            <div class="brainwave-image-grid">
+              <figure class="brainwave-image-card">
+                <button class="photo-open" type="button" data-lab data-src="/egg/IMG_20190924_104145.webp" style="--media: url('/egg/IMG_20190924_104145.webp')" aria-label="Open original EEG headset setup photo">
+                  <img src="/egg/IMG_20190924_104145.webp" alt="Original camera photo of EEG headset components before a field session" loading="lazy" decoding="async">
+                </button>
+                <figcaption><span>Original camera photo</span><strong>Headset preparation</strong></figcaption>
+              </figure>
+              <figure class="brainwave-image-card">
+                <button class="photo-open" type="button" data-lab data-src="/egg/IMG_20190924_104524.jpg" style="--media: url('/egg/IMG_20190924_104524.jpg')" aria-label="Open original EEG fieldwork photo">
+                  <img src="/egg/IMG_20190924_104524.jpg" alt="Original camera photo of a participant wearing the EEG headset" loading="lazy" decoding="async">
+                </button>
+                <figcaption><span>Original camera photo</span><strong>Headset fit and setup</strong></figcaption>
+              </figure>
+              <figure class="brainwave-image-card">
+                <button class="photo-open" type="button" data-lab data-src="/egg/IMG_20190924_104524%20(1).jpg" style="--media: url('/egg/IMG_20190924_104524%20(1).jpg')" aria-label="Open alternate original EEG fieldwork photo">
+                  <img src="/egg/IMG_20190924_104524%20(1).jpg" alt="Alternate original camera photo from the headset fitting session" loading="lazy" decoding="async">
+                </button>
+                <figcaption><span>Original camera photo</span><strong>Session fitting</strong></figcaption>
+              </figure>
+              <figure class="brainwave-image-card">
+                <button class="photo-open" type="button" data-lab data-src="/egg/IMG_20190924_110343.jpg" style="--media: url('/egg/IMG_20190924_110343.jpg')" aria-label="Open original meditation EEG session photo">
+                  <img src="/egg/IMG_20190924_110343.jpg" alt="Original camera photo during a meditation EEG session" loading="lazy" decoding="async">
+                </button>
+                <figcaption><span>Original camera photo</span><strong>Recording session</strong></figcaption>
+              </figure>
+              <figure class="brainwave-image-card">
+                <button class="photo-open" type="button" data-lab data-src="/egg/IMG_20190924_110423_1.webp" style="--media: url('/egg/IMG_20190924_110423_1.webp')" aria-label="Open close-up original EEG session photo">
+                  <img src="/egg/IMG_20190924_110423_1.webp" alt="Close view of the EEG headset during the original field session" loading="lazy" decoding="async">
+                </button>
+                <figcaption><span>Original camera photo</span><strong>EEG headset in use</strong></figcaption>
+              </figure>
+              <figure class="brainwave-image-card brainwave-concept-image">
+                <button class="photo-open" type="button" data-lab data-src="/egg/device.jpeg" style="--media: url('/egg/device.jpeg')" aria-label="Open AI-generated illustrative headset diagram">
+                  <img src="/egg/device.jpeg" alt="AI-generated conceptual diagram of an EEG headset; not an exact device specification" loading="lazy" decoding="async">
+                </button>
+                <figcaption><span>AI-generated illustration</span><strong>Conceptual headset overview, not a technical spec sheet</strong></figcaption>
+              </figure>
+              <figure class="brainwave-image-card brainwave-concept-image">
+                <button class="photo-open" type="button" data-lab data-src="/egg/how_works.jpeg" style="--media: url('/egg/how_works.jpeg')" aria-label="Open AI-generated illustrative fieldwork workflow image">
+                  <img src="/egg/how_works.jpeg" alt="AI-generated conceptual illustration of an EEG meditation workflow; any displayed scores are synthetic" loading="lazy" decoding="async">
+                </button>
+                <figcaption><span>AI-generated illustration</span><strong>Workflow concept; displayed scores are not study results</strong></figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <div class="article-byline brainwave-byline">
+            <span>Neuro-fieldwork / Ibriz AI / 2019 / Janak Singh Raikhola</span>
+            <a href="/case-study.html">&larr; All case studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section article-keep-reading">
+      <div class="container">
+        <p class="mini-label">Related work</p>
+        <h2>Explore more systems work</h2>
+        <div class="article-related-grid">
+          <a class="article-related-link" href="/case-study-detail.html"><span>Fintech / Blockchain</span><strong>Fixing a critical blockchain transaction failure</strong><span aria-hidden="true">&rarr;</span></a>
+          <a class="article-related-link" href="/article-robotics.html"><span>Robotics / 2026</span><strong>From sensors to movement</strong><span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <a class="article-backlink" href="/case-study.html">Browse all case studies &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <button class="lightbox-close" type="button" data-lab-close aria-label="Close viewer">&times;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" data-lab-prev aria-label="Previous item">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" type="button" data-lab-next aria-label="Next item">&#8250;</button>
+    <figure class="lightbox-figure">
+      <div class="lightbox-stage" data-lab-stage></div>
+    </figure>
+    <p class="lightbox-count" aria-live="polite" data-lab-count></p>
+  </div>
+
+  <footer class="site-footer" data-label="Colophon">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Janak Singh Raikhola</p>
+      <p class="footer-note">© 2026 Janak Singh Raikhola</p>
+    </div>
+  </footer>
+
+  <script src="/js/sectionnav.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

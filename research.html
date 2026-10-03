@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Janak Singh Raikhola</title>
-  <meta name="description" content="Research notes and publications from Janak Singh Raikhola spanning AI, blockchain, secure systems, IoT, and product design.">
+  <meta name="description" content="Research and technical work by Janak Singh Raikhola on distributed reliability, software security, blockchain transactions, IoT, and robotics.">
   <link rel="icon" type="image/svg+xml" href="/img/jr-favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,6 @@
           <li><a href="/photos.html">Photos</a></li>
           <li><a href="/research.html" aria-current="true">Research</a></li>
           <li><a href="/resume.html">Resume</a></li>
-          <li><a href="/index.html#contact">Contact</a></li>
           <li><a class="nav-cta" href="https://www.linkedin.com/in/janakprofile" target="_blank" rel="noopener noreferrer">Let's Work Together</a></li>
         </ul>
       </nav>
@@ -45,63 +44,119 @@
   </header>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <p class="page-kicker">Research & publication</p>
-        <h1>Thinking in systems, publishing what matters.</h1>
-        <p class="page-intro">My research focus sits at the boundary of backend reliability, AI, secure systems, and human-centered design. I publish notes where product logic meets real-world constraints.</p>
+    <section class="page-hero research-hero">
+      <div class="container research-profile">
+        <div class="research-profile-heading">
+          <p class="page-kicker">Research / Systems</p>
+          <h1>Research for systems that work in the real world.</h1>
+        </div>
+        <div class="research-profile-copy">
+          <p>My work examines reliability, security, and recovery in production software and connected devices. I focus on what happens when distributed services, AI workflows, sensors, and people meet real operating conditions.</p>
+          <p class="research-role">Founder &amp; CEO, FutureStoreAI. Research interests: distributed systems, blockchain transaction safety, applied AI, IoT, and robotics.</p>
+          <a class="research-external-link" href="https://lushiv.medium.com/" target="_blank" rel="noopener noreferrer">Writing on Medium <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="section page-section">
-      <div class="container research-grid">
-        <article class="article-card research-card">
-          <div class="meta-row">
-            <span class="page-tag">AI & security</span>
-            <span class="page-date">PDF</span>
-          </div>
-          <h2>Security awareness in a legit-looking project</h2>
-          <p>A review of hidden runtime risk, obfuscated logic, and why an outwardly polished project still demands strict inspection of source, environment variables, and outbound requests.</p>
-          <a class="btn btn-primary" href="/files/developer-security-awareness.pdf" target="_blank" rel="noopener noreferrer">Open paper</a>
-        </article>
-
-        <article class="article-card research-card">
-          <div class="meta-row">
-            <span class="page-tag">Blockchain</span>
-            <span class="page-date">PDF</span>
-          </div>
-          <h2>Production case study: blockchain transaction failure</h2>
-          <p>An engineering breakdown of nonce mismatch, race conditions, and the fix that stabilized transaction processing under production load.</p>
-          <a class="btn btn-primary" href="/files/blockchain-transaction-failure.pdf" target="_blank" rel="noopener noreferrer">Read case</a>
-        </article>
-
-        <article class="article-card research-card">
-          <div class="meta-row">
-            <span class="page-tag">Life & journey</span>
-            <span class="page-date">PDF</span>
-          </div>
-          <h2>Janak Singh Raikhola: life story &amp; journey</h2>
-          <p>A personal narrative about the road from a remote village, first internet discovery, and the discipline that shaped a technology career.</p>
-          <a class="btn btn-primary" href="/files/janak-journey-story.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-alt page-section">
+    <section class="section research-focus-section">
       <div class="container">
         <header class="section-head narrow">
-          <p class="section-label">Focus areas</p>
-          <h2>Research themes I keep returning to</h2>
+          <p class="section-label">Research agenda</p>
+          <h2>Questions behind the work</h2>
         </header>
-        <div class="tag-grid">
-          <span>Secure backend systems</span>
-          <span>AI agents</span>
-          <span>Blockchain architecture</span>
-          <span>FinTech transactions</span>
-          <span>IoT and robotics</span>
-          <span>Human-centered UX</span>
-          <span>Distributed reliability</span>
-          <span>System design</span>
+        <div class="research-focus-grid">
+          <article>
+            <span>01</span>
+            <h3>Distributed reliability</h3>
+            <p>How systems preserve state, recover from partial failure, and remain observable under load.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Software security</h3>
+            <p>How source, dependencies, configuration, and outbound behavior shape software risk.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Blockchain transactions</h3>
+            <p>How sequencing and concurrency affect transaction correctness in production systems.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>IoT and robotics</h3>
+            <p>How devices communicate uncertainty and recover when sensors or networks fail.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt research-work-section">
+      <div class="container">
+        <header class="section-head narrow">
+          <p class="section-label">Selected work</p>
+          <h2>Technical notes, case work, and field articles</h2>
+        </header>
+        <div class="research-record-list">
+          <article class="research-record">
+            <div class="research-record-meta"><span>Technical note</span><span>Software security / PDF</span></div>
+            <div>
+              <h3>Security awareness in a legit-looking project</h3>
+              <p>A review of hidden runtime risk, obfuscated logic, and why an outwardly polished project still demands strict inspection of source, environment variables, and outbound requests.</p>
+              <a class="text-link" href="/files/developer-security-awareness.pdf" target="_blank" rel="noopener noreferrer">Open technical note <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="research-record">
+            <div class="research-record-meta"><span>Engineering case study</span><span>Blockchain / PDF</span></div>
+            <div>
+              <h3>Production case study: blockchain transaction failure</h3>
+              <p>An engineering breakdown of nonce mismatch, race conditions, and the fix that stabilized transaction processing under production load.</p>
+              <div class="research-record-links">
+                <a class="text-link" href="/files/blockchain-transaction-failure.pdf" target="_blank" rel="noopener noreferrer">Open PDF <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="/case-study-detail.html">Read online <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="research-record">
+            <div class="research-record-meta"><span>Field article</span><span>Backend systems / 2026</span></div>
+            <div>
+              <h3>Designing for reliability in backend systems</h3>
+              <p>Failure planning, state control, and the architecture decisions that make production systems easier to trust.</p>
+              <a class="text-link" href="/article-backend-systems.html">Read article <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="research-record">
+            <div class="research-record-meta"><span>Field article</span><span>IoT / 2026</span></div>
+            <div>
+              <h3>Why IoT should be designed around trust, not just sensors</h3>
+              <p>Signal quality, device security, and clear communication when connected systems encounter uncertainty.</p>
+              <a class="text-link" href="/article-iot.html">Read article <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="research-record">
+            <div class="research-record-meta"><span>Field article</span><span>Robotics / 2026</span></div>
+            <div>
+              <h3>From sensors to movement: the real engineering challenge in robotics</h3>
+              <p>Perception, timing, and recovery as foundations for dependable autonomy.</p>
+              <a class="text-link" href="/article-robotics.html">Read article <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research-background-section">
+      <div class="container research-background">
+        <div>
+          <p class="section-label">Background</p>
+          <h2>Personal path into technology</h2>
+        </div>
+        <p>A personal account of the early experiences that led from a remote Nepal village to software engineering and systems research.</p>
+        <div class="research-record-links">
+          <a class="text-link" href="/story.html">Read my story <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="/files/janak-journey-story.pdf" target="_blank" rel="noopener noreferrer">Open story PDF <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
