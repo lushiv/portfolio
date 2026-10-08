@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fixing a critical blockchain transaction failure | Janak Singh Raikhola</title>
-  <meta name="description" content="A production case study on blockchain transaction failure caused by nonce desynchronization and resolved through disciplined system design.">
+  <title>How We Fixed a Critical Blockchain Transaction Failure in Production | Janak Singh Raikhola</title>
+  <meta name="description" content="How a Redis-based centralized nonce manager fixed intermittent blockchain transaction failures in a live fintech system serving more than one million users.">
   <link rel="icon" type="image/svg+xml" href="/img/jr-favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,43 +44,178 @@
   </header>
 
   <main id="main" class="page-main">
-    <section class="page-hero">
+    <section class="page-hero article-hero blockchain-article-hero">
       <div class="container">
-        <p class="page-kicker">Production case study</p>
-        <h1>Fixing a critical blockchain transaction failure in a live fintech environment</h1>
-        <p class="page-intro">When transaction acceptance began failing unpredictably, the core issue was not the blockchain provider itself; it was a state sequencing problem that could quietly destabilize the full flow.</p>
+        <a class="article-backlink" href="/case-study.html">&larr; All case studies</a>
+        <div class="article-meta-row">
+          <span>Blockchain / Fintech</span>
+          <span>June 11, 2026</span>
+          <span>Production case study</span>
+        </div>
+        <h1>How We Fixed a Critical Blockchain Transaction Failure in Production <em>(1M Users)</em></h1>
+        <div class="blockchain-author">
+          <img src="/img/case-study-blockchain/author.jpg" alt="" width="52" height="52" loading="eager" decoding="async">
+          <div>
+            <a href="https://www.linkedin.com/in/janakprofile/" target="_blank" rel="noopener noreferrer"><strong>Janak Singh Raikhola</strong></a>
+            <p>Founder &amp; CEO at FutureStoreAI (FSAI) | Backend &amp; DevOps Systems Architect | Cloud &amp; CI/CD Automation | Robotics &amp; IoT Researcher | Web3, Fintech &amp; AI Developer | Top Rated Freelancer</p>
+          </div>
+        </div>
+        <p class="page-intro article-deck">In a live fintech system serving 1M+ users, we faced a critical issue where blockchain transactions started failing randomly.</p>
       </div>
     </section>
 
-    <section class="section page-section">
-      <div class="container story-layout">
-        <article class="case-copy prose">
-          <p>The issue surfaced as a sequence of seemingly random transaction failures: the same wallet, account, and flow, but different outcomes depending on timing and concurrency. That pattern usually points to one thing: state desynchronization.</p>
-          <p>In blockchain systems, transaction ordering matters. When multiple operations try to use the same nonce or transaction state at once, the system can drift out of sync and reject the next valid request. In a live production environment, this creates a serious product problem because users are seeing failures even though the wallet and funds are technically valid.</p>
+    <section class="section page-section article-section">
+      <div class="container">
+        <div class="article-detail-layout">
+          <aside class="article-sidebar">
+            <p class="article-reading-time"><span>Published</span><strong>June 11, 2026</strong></p>
+            <nav class="article-toc" aria-label="In this case study">
+              <p class="mini-label">In this case study</p>
+              <ol>
+                <li><a href="#the-real-problem">The Real Problem</a></li>
+                <li><a href="#what-we-discovered">What We Discovered</a></li>
+                <li><a href="#root-cause">Root Cause</a></li>
+                <li><a href="#what-is-a-nonce">What is a Nonce?</a></li>
+                <li><a href="#why-nonce-is-important">Why Nonce is Important</a></li>
+                <li><a href="#what-went-wrong">What Went Wrong</a></li>
+                <li><a href="#the-fix">The Fix</a></li>
+                <li><a href="#result">Result</a></li>
+                <li><a href="#key-learnings">Key Learnings</a></li>
+              </ol>
+            </nav>
+          </aside>
+          <div class="article-main">
+            <figure class="article-cover blockchain-article-cover">
+              <img src="/img/case-study-blockchain/article-cover.png" alt="Blockchain production case study cover illustrating a transaction failure and nonce ordering" width="1128" height="1000" loading="eager" decoding="async">
+            </figure>
+            <article class="case-copy prose article-body">
+              <p>In a live fintech system serving 1M+ users, we faced a critical issue where blockchain transactions started failing randomly.</p>
+              <p>At first, everything looked normal:</p>
+              <ul>
+                <li>RPC provider was stable</li>
+                <li>Blockchain network was healthy</li>
+                <li>Backend APIs were working</li>
+              </ul>
+              <p>But transactions were still failing intermittently with almost no useful error logs.</p>
 
-          <h2>What I found</h2>
-          <p>We were treating blockchain access as if it were a normal request/response layer. In practice, it behaves more like a systematic state machine with strict sequencing rules. Once that became clear, the root cause was straightforward: the service layer was not controlling transaction lifecycle with enough integrity.</p>
-          <p>The fix required more than a retry patch. We needed a proper transaction manager with consistent sequencing, a clear source of truth, and a way to prevent overlapping writes from the same account context.</p>
+              <h2 id="the-real-problem">The Real Problem</h2>
+              <figure class="blockchain-article-figure">
+                <img src="/img/case-study-blockchain/problem-flow.png" alt="Before-fix transaction flow showing parallel workers independently generating conflicting nonces and causing blockchain rejections" width="1298" height="1000" loading="lazy" decoding="async">
+                <figcaption>The Real Problem: parallel transaction flows were producing nonce conflicts.</figcaption>
+              </figure>
+              <p><strong>The Real Problem: Nonce Issue</strong></p>
+              <p>Our logs only showed:</p>
+              <pre><code>“Transaction Failed”</code></pre>
+              <p>No RPC details. No blockchain error context.</p>
+              <p>This made debugging extremely difficult.</p>
 
-          <h2>The fix</h2>
-          <p>I introduced a centralized strategy that serialized critical transaction actions and tracked the state transitions in a controlled layer. This allowed the system to recover from races and process each transaction in a deterministic order instead of relying on probabilistic timing.</p>
-          <p>In practical terms, the work improved failure predictability, reduced support issues, and restored operational confidence in the live flow. The result was not just technical stability; it was a stronger customer experience because the system behaved consistently under pressure.</p>
+              <h2 id="what-we-discovered">What We Discovered</h2>
+              <p>After improving logging, we finally saw the real error:</p>
+              <pre><code>nonce mismatch / nonce too low / replacement transaction error</code></pre>
 
-          <h2>Why this matters</h2>
-          <p>In complex systems, the hardest bugs are often not “broken features.” They are incorrect assumptions about concurrency, ordering, and state. This case reinforced a broader engineering principle: product reliability is built by making unknowns visible and manageable.</p>
-        </article>
+              <h2 id="root-cause">Root Cause</h2>
+              <p>The issue came from <strong>nonce desynchronization</strong> in our blockchain wallet system.</p>
+              <p>Why it happened:</p>
+              <ul>
+                <li>Multiple background workers</li>
+                <li>Retry system re-submitting transactions</li>
+                <li>Admin cancellation flow</li>
+                <li>Parallel transaction processing</li>
+              </ul>
+              <p>This caused multiple workers to generate conflicting nonces.</p>
+              <p>In simple terms: Two or more transactions were trying to use the same “sequence number”, and the blockchain rejected them.</p>
 
-        <aside class="story-aside">
-          <div class="stat-panel">
-            <p class="mini-label">Key lessons</p>
-            <ul>
-              <li><strong>Root cause</strong><span>state sequencing drift</span></li>
-              <li><strong>Fix</strong><span>centralized transaction control</span></li>
-              <li><strong>Outcome</strong><span>stability under concurrency</span></li>
-              <li><strong>Pattern</strong><span>design for failure before scaling</span></li>
-            </ul>
+              <h2 id="what-is-a-nonce">What is a Nonce (Simple Explanation)</h2>
+              <figure class="blockchain-article-figure">
+                <img src="/img/case-study-blockchain/nonce-sequence.png" alt="Sequential wallet transaction nonces 10, 11, and 12 contrasted with an invalid sequence gap that a blockchain rejects" width="1146" height="1000" loading="lazy" decoding="async">
+                <figcaption>Blockchain transactions from a wallet must follow a strict, continuous nonce sequence.</figcaption>
+              </figure>
+              <p>In blockchain systems, a <strong>nonce</strong> is a sequential number assigned to each transaction from a wallet.</p>
+              <p>Think of it like a queue number:</p>
+              <ul>
+                <li>Transaction 1 &rarr; nonce 10</li>
+                <li>Transaction 2 &rarr; nonce 11</li>
+                <li>Transaction 3 &rarr; nonce 12</li>
+              </ul>
+              <p>Blockchain expects this sequence to be <strong>strict and continuous</strong>.</p>
+              <p>If order breaks &rarr; transaction is rejected.</p>
+
+              <h2 id="why-nonce-is-important">Why Nonce is Important</h2>
+              <p>Nonce ensures:</p>
+              <ul>
+                <li>Transactions are processed in correct order</li>
+                <li>No duplicate transactions</li>
+                <li>Wallet state consistency</li>
+                <li>Protection against replay or conflicts</li>
+              </ul>
+              <p>Even a small mismatch can block all future transactions.</p>
+
+              <h2 id="what-went-wrong">What Went Wrong in Our System</h2>
+              <p>Our system had multiple parallel components:</p>
+              <ul>
+                <li>Background workers</li>
+                <li>Retry system</li>
+                <li>Admin cancellation flow</li>
+                <li>Multiple cron jobs</li>
+              </ul>
+              <p>This caused:</p>
+              <ul>
+                <li>Multiple workers generating transactions at the same time</li>
+                <li>Retry sending old transactions again</li>
+                <li>Nonce values getting reused or skipped</li>
+              </ul>
+              <p>Result: Two transactions ended up using the same nonce &rarr; blockchain rejected them.</p>
+
+              <h2 id="centralized-root-cause">Root Cause (Simple)</h2>
+              <p>We had <strong>no centralized nonce management</strong>.</p>
+              <p>Each worker was generating nonce independently, which created race conditions in a distributed system.</p>
+
+              <h2 id="the-fix">The Fix</h2>
+              <figure class="blockchain-article-figure">
+                <img src="/img/case-study-blockchain/fixed-flow.png" alt="After-fix transaction architecture with all workers requesting a nonce from a shared Redis manager before sending transactions to the RPC provider" width="1172" height="1000" loading="lazy" decoding="async">
+                <figcaption>After the fix: workers share a centralized nonce state and submit transactions in order.</figcaption>
+              </figure>
+              <p>We implemented a <strong>Redis-based centralized nonce manager</strong>:</p>
+              <ul>
+                <li>Redis acts as single source of truth</li>
+                <li>Atomic increment ensures safe nonce generation</li>
+                <li>All workers share same state</li>
+                <li>No duplicate nonce possible</li>
+              </ul>
+              <p>Now flow looks like:</p>
+              <pre><code>Worker → Redis (get + increment nonce) → RPC → Blockchain</code></pre>
+              <figure class="blockchain-article-figure">
+                <img src="/img/case-study-blockchain/redis-nonce-flow.png" alt="Redis nonce manager flow: workers request and atomically increment a shared nonce before calling the RPC provider and blockchain" width="1280" height="720" loading="lazy" decoding="async">
+                <figcaption>Redis-based centralized nonce manager</figcaption>
+              </figure>
+
+              <h2 id="result">Result</h2>
+              <ul>
+                <li>Transaction failures dropped to near zero</li>
+                <li>Retry system became stable</li>
+                <li>Workers fully synchronized</li>
+                <li>Production system stabilized quickly</li>
+              </ul>
+
+              <h2 id="key-learnings">Key Learnings</h2>
+              <ul>
+                <li>Logging is critical in distributed systems</li>
+                <li>Blockchain transactions require strict state control</li>
+                <li>Parallel workers must share state (not local memory)</li>
+                <li>Retry systems can silently introduce complex bugs</li>
+                <li>Small race conditions can become major production incidents</li>
+              </ul>
+
+              <h2 id="final-thought">Final Thought</h2>
+              <p>In distributed fintech systems, even a simple concept like “sequence number” can become a system-critical failure point if not centrally controlled.</p>
+              <p>This incident reinforced one thing: Always design state carefully in distributed systems.</p>
+            </article>
+            <div class="article-byline">
+              <span>Blockchain / Fintech / June 11, 2026 / Janak Singh Raikhola</span>
+              <a href="https://www.linkedin.com/pulse/how-we-fixed-critical-blockchain-transaction-failure-1m-raikhola-4w6kc/" target="_blank" rel="noopener noreferrer">View original on LinkedIn ↗</a>
+            </div>
           </div>
-        </aside>
+        </div>
       </div>
     </section>
   </main>
