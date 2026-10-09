@@ -412,20 +412,6 @@ a:hover { text-decoration: underline; }
   object-fit: cover;
 }
 
-.sys-scan {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.16) 50%, transparent 100%);
-  background-size: 100% 200%;
-  animation: scan 5.5s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes scan {
-  0% { background-position: 0 -100%; }
-  100% { background-position: 0 200%; }
-}
-
 .sys-caption {
   display: flex;
   align-items: center;
