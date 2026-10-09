@@ -226,6 +226,122 @@
     });
   }
 
+  function initSupportWidget() {
+    var bookingUrl = 'https://cal.com/janak-raikhola-wyun0t';
+
+    var bookingButton = document.createElement('a');
+    bookingButton.className = 'booking-widget-button';
+    bookingButton.href = bookingUrl;
+    bookingButton.target = '_blank';
+    bookingButton.rel = 'noopener noreferrer';
+    bookingButton.setAttribute('aria-label', 'Book a call with Janak');
+    bookingButton.title = 'Book a call';
+    bookingButton.textContent = '↗';
+
+    var button = document.createElement('button');
+    button.className = 'support-widget-button';
+    button.type = 'button';
+    button.setAttribute('aria-label', 'Open support QR code');
+    button.setAttribute('aria-haspopup', 'dialog');
+    button.setAttribute('aria-controls', 'support-widget-dialog');
+    button.title = 'Support my work';
+
+    var icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    icon.setAttribute('viewBox', '0 0 24 24');
+    icon.setAttribute('aria-hidden', 'true');
+    var iconOutline = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    iconOutline.setAttribute('d', 'M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z');
+    iconOutline.setAttribute('fill', 'none');
+    iconOutline.setAttribute('stroke', 'currentColor');
+    iconOutline.setAttribute('stroke-width', '2');
+    var iconModules = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    iconModules.setAttribute('d', 'M14 14h3v3h-3zM19 14h2v2h-2zM19 19h2v2h-2zM14 19h2v2h-2zM17 17h2v2h-2z');
+    iconModules.setAttribute('fill', 'currentColor');
+    icon.appendChild(iconOutline);
+    icon.appendChild(iconModules);
+    button.appendChild(icon);
+
+    document.body.appendChild(bookingButton);
+    document.body.appendChild(button);
+
+    var dialog = document.createElement('dialog');
+    dialog.className = 'support-widget-dialog';
+    dialog.id = 'support-widget-dialog';
+    dialog.setAttribute('aria-labelledby', 'support-widget-title');
+
+    var close = document.createElement('button');
+    close.className = 'support-widget-close';
+    close.type = 'button';
+    close.setAttribute('aria-label', 'Close support popup');
+    close.textContent = '×';
+
+    var heading = document.createElement('h2');
+    heading.id = 'support-widget-title';
+    heading.textContent = 'Support my work';
+
+    var description = document.createElement('p');
+    description.className = 'support-widget-description';
+    description.textContent = 'Scan the QR code to open my Buy Me a Coffee page and choose an amount to support my work.';
+
+    var qrLink = document.createElement('a');
+    qrLink.className = 'support-widget-qr-link';
+    qrLink.href = 'https://buymeacoffee.com/janakraikhola';
+    qrLink.target = '_blank';
+    qrLink.rel = 'noopener noreferrer';
+    qrLink.setAttribute('aria-label', 'Open Janak Raikhola’s Buy Me a Coffee page in a new tab');
+
+    var qrImage = document.createElement('img');
+    qrImage.src = '/qr/bmc_qr%20(1).png';
+    qrImage.alt = 'QR code for Janak Raikhola’s Buy Me a Coffee page';
+    qrImage.width = 700;
+    qrImage.height = 700;
+    qrImage.decoding = 'async';
+    qrLink.appendChild(qrImage);
+
+    var pageLink = document.createElement('a');
+    pageLink.className = 'support-widget-page-link';
+    pageLink.href = 'https://buymeacoffee.com/janakraikhola';
+    pageLink.target = '_blank';
+    pageLink.rel = 'noopener noreferrer';
+    pageLink.textContent = 'Open Buy Me a Coffee';
+
+    dialog.appendChild(close);
+    dialog.appendChild(heading);
+    dialog.appendChild(description);
+    dialog.appendChild(qrLink);
+    dialog.appendChild(pageLink);
+    document.body.appendChild(dialog);
+
+    button.addEventListener('click', function () {
+      if (typeof dialog.showModal === 'function') {
+        dialog.showModal();
+        close.focus();
+      } else {
+        dialog.setAttribute('open', '');
+      }
+    });
+
+    close.addEventListener('click', function () {
+      dialog.close();
+    });
+
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) {
+        dialog.close();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && dialog.open) {
+        dialog.close();
+      }
+    });
+
+    dialog.addEventListener('close', function () {
+      button.focus();
+    });
+  }
+
   function initGalaxy() {
     var canvas = document.getElementById('galaxy');
     if (!canvas || !canvas.getContext) {
@@ -423,5 +539,6 @@
   initNavToggle();
   initScrollSpy();
   initLab();
+  initSupportWidget();
   initReveal();
 })();

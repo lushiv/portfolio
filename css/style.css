@@ -1772,34 +1772,6 @@ a:hover { text-decoration: underline; }
   font-size: 0.78rem;
 }
 
-/* ---------- Contact ---------- */
-
-.contact-inner { max-width: 720px; }
-
-.contact-list {
-  list-style: none;
-  border-top: 1px solid var(--border);
-}
-
-.contact-list li {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 8px 20px;
-  padding: 16px 2px;
-  border-bottom: 1px solid var(--border);
-}
-
-.contact-key {
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.contact-val { font-weight: 500; }
-
 /* ---------- Footer ---------- */
 
 .site-footer { padding: 34px 0; background: var(--bg-alt); }
